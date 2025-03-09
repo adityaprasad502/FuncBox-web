@@ -1,15 +1,216 @@
-
 // Extended snippets data with more information
 const snippets = [
-    {
-        id: 1,
-        title: "even number",
-        description: "check whether Checks if a given number or a list of numbers is even.there the string it is palindrome or not",
-        language: "java",
-        code: "public static boolean isEven(int number) {\n    return number % 2 == 0;\n}\n\n",
-        created: new Date(2025, 2, 9),
-        tags: ["even", "math"]
-    }
+    [
+        {
+            "id": 1,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "python",
+            "code": "from funcbox import is_odd\n\nprint(is_odd(...))  # Single Value\nprint(is_odd([......]))  # Multiple Values",
+            "created": "2025-03-09T05:51:54.380Z",
+            "tags": [
+                "odd",
+                "math",
+                "python"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "java",
+            "code": "public static boolean isOdd(int num) {\n    return num % 2 != 0;\n}",
+            "created": "2025-03-09T05:51:54.382Z",
+            "tags": [
+                "odd",
+                "math",
+                "java"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "c",
+            "code": "#include <stdbool.h>\n\nbool is_odd(int num) {\n    return num % 2 != 0;\n}",
+            "created": "2025-03-09T05:51:54.383Z",
+            "tags": [
+                "odd",
+                "math",
+                "c"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "cpp",
+            "code": "#include <iostream>\n\nbool is_odd(int num) {\n    return num % 2 != 0;\n}",
+            "created": "2025-03-09T05:51:54.386Z",
+            "tags": [
+                "odd",
+                "math",
+                "cpp"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "csharp",
+            "code": "public static bool IsOdd(int num) {\n    return num % 2 != 0;\n}",
+            "created": "2025-03-09T05:51:54.392Z",
+            "tags": [
+                "odd",
+                "math",
+                "csharp"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "kotlin",
+            "code": "fun isOdd(num: Int): Boolean {\n    return num % 2 != 0\n}",
+            "created": "2025-03-09T05:51:54.417Z",
+            "tags": [
+                "odd",
+                "math",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "javascript",
+            "code": "function isOdd(num) {\n    return num % 2 !== 0;\n}",
+            "created": "2025-03-09T05:51:54.420Z",
+            "tags": [
+                "odd",
+                "math",
+                "javascript"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "is odd",
+            "description": "to check whether the given number is odd or not.",
+            "language": "go",
+            "code": "func IsOdd(num int) bool {\n    return num%2 != 0\n}",
+            "created": "2025-03-09T05:51:54.423Z",
+            "tags": [
+                "odd",
+                "math",
+                "go"
+            ]
+        }
+    ], [
+        {
+            "id": 9,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "python",
+            "code": "from funcbox import is_even\n\nprint(is_even(...)) # single value\nprint(is_even([.....])) # multiple values",
+            "created": "2025-03-09T05:57:22.245Z",
+            "tags": [
+                "even",
+                "math",
+                "python"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "java",
+            "code": "public static boolean isEven(int num) {\n    return num % 2 == 0;\n}",
+            "created": "2025-03-09T05:57:22.252Z",
+            "tags": [
+                "even",
+                "math",
+                "java"
+            ]
+        },
+        {
+            "id": 11,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "c",
+            "code": "#include <stdbool.h>\n\nbool is_even(int num) {\n    return num % 2 == 0;\n}",
+            "created": "2025-03-09T05:57:22.256Z",
+            "tags": [
+                "even",
+                "math",
+                "c"
+            ]
+        },
+        {
+            "id": 12,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "cpp",
+            "code": "#include <iostream>\n\nbool is_even(int num) {\n    return num % 2 == 0;\n}",
+            "created": "2025-03-09T05:57:22.259Z",
+            "tags": [
+                "even",
+                "math",
+                "cpp"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "csharp",
+            "code": "public static bool IsEven(int num) {\n    return num % 2 == 0;\n}",
+            "created": "2025-03-09T05:57:22.265Z",
+            "tags": [
+                "even",
+                "math",
+                "csharp"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "kotlin",
+            "code": "fun isEven(num: Int): Boolean {\n    return num % 2 == 0\n}",
+            "created": "2025-03-09T05:57:22.290Z",
+            "tags": [
+                "even",
+                "math",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "javascript",
+            "code": "function isEven(num) {\n    return num % 2 === 0;\n}",
+            "created": "2025-03-09T05:57:22.293Z",
+            "tags": [
+                "even",
+                "math",
+                "javascript"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "is even",
+            "description": "to check whether the number is even or not",
+            "language": "go",
+            "code": "func IsEven(num int) bool {\n    return num%2 == 0\n}",
+            "created": "2025-03-09T05:57:22.295Z",
+            "tags": [
+                "even",
+                "math",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
@@ -23,11 +224,12 @@ const languagesCountEl = document.getElementById('languagesCount');
 
 // Initialize stats
 function updateStats(filtered) {
-    totalSnippetsEl.textContent = snippets.length;
+    const flatSnippets = snippets.flat();
+    totalSnippetsEl.textContent = flatSnippets.length;
     filteredSnippetsEl.textContent = filtered.length;
 
     // Count unique languages
-    const uniqueLanguages = [...new Set(snippets.map(s => s.language))];
+    const uniqueLanguages = [...new Set(flatSnippets.map(s => s.language))];
     languagesCountEl.textContent = uniqueLanguages.length;
 }
 
@@ -35,15 +237,10 @@ function updateStats(filtered) {
 languageFilters.addEventListener('click', (e) => {
     const target = e.target.closest('.lang-filter');
     if (target) {
-        // Remove active class from all filters
         document.querySelectorAll('.lang-filter').forEach(filter => {
             filter.classList.remove('active');
         });
-
-        // Add active class to clicked filter
         target.classList.add('active');
-
-        // Filter snippets
         filterSnippets();
     }
 });
@@ -61,8 +258,11 @@ function filterSnippets() {
     const selectedLanguage = activeFilter ? activeFilter.getAttribute('data-language') : 'all';
     const sortBy = sortSelect.value;
 
+    // Flatten the snippets array
+    const flatSnippets = snippets.flat();
+
     // Filter snippets
-    let filtered = snippets.filter(snippet => {
+    let filtered = flatSnippets.filter(snippet => {
         const matchesLanguage = selectedLanguage === 'all' || snippet.language === selectedLanguage;
         const matchesSearch = searchText === '' ||
             snippet.code.toLowerCase().includes(searchText) ||
@@ -76,15 +276,14 @@ function filterSnippets() {
     // Sort snippets
     switch (sortBy) {
         case 'newest':
-            filtered.sort((a, b) => b.created - a.created);
+            filtered.sort((a, b) => new Date(b.created) - new Date(a.created));
             break;
         case 'oldest':
-            filtered.sort((a, b) => a.created - b.created);
+            filtered.sort((a, b) => new Date(a.created) - new Date(b.created));
             break;
         case 'name':
             filtered.sort((a, b) => a.title.localeCompare(b.title));
             break;
-        // For relevance, keep original order or implement custom relevance logic
     }
 
     // Display snippets
@@ -99,62 +298,50 @@ function renderSnippets(snippetsToRender) {
     snippetDisplay.innerHTML = '';
 
     if (snippetsToRender.length === 0) {
-        // Show empty state
         snippetDisplay.innerHTML = `
-<div class="empty-state">
-    <i class="fas fa-search"></i>
-    <h3>No snippets found</h3>
-    <p>Try adjusting your search or filter criteria</p>
-</div>
-`;
+        <div class="empty-state">
+            <i class="fas fa-search"></i>
+            <h3>No snippets found</h3>
+            <p>Try adjusting your search or filter criteria</p>
+        </div>`;
         return;
     }
 
     snippetsToRender.forEach(snippet => {
-        // Create the card
         const card = document.createElement('div');
         card.className = 'code-card';
         card.id = `snippet-${snippet.id}`;
 
-        // Get date formatted
-        const dateFormatted = snippet.created.toLocaleDateString('en-US', {
+        // Convert date string to Date object
+        const dateFormatted = new Date(snippet.created).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'short',
             day: 'numeric'
         });
 
-        // Create card header
-        const headerHtml = `
-<div class="code-header">
-<div class="language-badge ${snippet.language}">
-<i class="fab fa-${getLanguageIcon(snippet.language)}"></i>
-${capitalizeFirstLetter(snippet.language)}
-</div>
-<h5>${snippet.title}</h5>
-<div class="code-actions">
-<button class="action-btn copy-btn" title="Copy to clipboard">
-    <i class="fas fa-copy"></i>
-</button>
-<button class="action-btn expand-btn" title="Expand view">
-    <i class="fas fa-expand-alt"></i>
-</button>
-</div>
-</div>
-`;
+        card.innerHTML = `
+        <div class="code-header">
+            <div class="language-badge ${snippet.language}">
+                <i class="fab fa-${getLanguageIcon(snippet.language)}"></i>
+                ${capitalizeFirstLetter(snippet.language)}
+            </div>
+            <h5>${snippet.title}</h5>
+            <div class="code-actions">
+                <button class="action-btn copy-btn" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i>
+                </button>
+                <button class="action-btn expand-btn" title="Expand view">
+                    <i class="fas fa-expand-alt"></i>
+                </button>
+            </div>
+        </div>
+        <div class="code-content">
+            <div class="copy-success">Copied!</div>
+            <pre class="line-numbers"><code class="language-${snippet.language}">${escapeHtml(snippet.code)}</code></pre>
+            <p class="snippet-date">Created: ${dateFormatted}</p>
+        </div>`;
 
-        // Create card content
-        const contentHtml = `
-<div class="code-content">
-<div class="copy-success">Copied!</div>
-<pre class="line-numbers"><code class="language-${snippet.language}">${escapeHtml(snippet.code)}</code></pre>
-</div>
-`;
-
-        // Assemble the card
-        card.innerHTML = headerHtml + contentHtml;
         snippetDisplay.appendChild(card);
-
-        // Setup event listeners for the card
         setupCardEvents(card, snippet);
     });
 
@@ -162,18 +349,18 @@ ${capitalizeFirstLetter(snippet.language)}
     Prism.highlightAll();
 }
 
-// Helper function to escape HTML for safe display
+// Escape HTML for safe display
 function escapeHtml(text) {
     return text
         .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;").replace(/>/g, "&gt;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
 }
 
 // Setup event listeners for card actions
 function setupCardEvents(card, snippet) {
-    // Copy button
     const copyBtn = card.querySelector('.copy-btn');
     copyBtn.addEventListener('click', () => {
         navigator.clipboard.writeText(snippet.code).then(() => {
@@ -185,80 +372,44 @@ function setupCardEvents(card, snippet) {
         });
     });
 
-    // Expand button
     const expandBtn = card.querySelector('.expand-btn');
     expandBtn.addEventListener('click', () => {
         createExpandedView(snippet);
     });
 }
 
-// Create expanded view for a snippet
+// Expand snippet view
 function createExpandedView(snippet) {
-    // Create expanded view container
     const expandedView = document.createElement('div');
     expandedView.className = 'expanded-view';
 
-    // Create expanded view content
     expandedView.innerHTML = `
-<div class="expanded-header">
-<div>
-<h2>${snippet.title}</h2>
-<p>${snippet.description}</p>
-</div>
-<button class="close-expanded">
-<i class="fas fa-times"></i> Close
-</button>
-</div>
-<div class="expanded-content">
-<pre class="line-numbers"><code class="language-${snippet.language}">${escapeHtml(snippet.code)}</code></pre>
-</div>
-`;
+    <div class="expanded-header">
+        <h2>${snippet.title}</h2>
+        <p>${snippet.description}</p>
+        <button class="close-expanded"><i class="fas fa-times"></i> Close</button>
+    </div>
+    <div class="expanded-content">
+        <pre class="line-numbers"><code class="language-${snippet.language}">${escapeHtml(snippet.code)}</code></pre>
+    </div>`;
 
-    // Add to body
     document.body.appendChild(expandedView);
-
-    // Apply syntax highlighting
     Prism.highlightAll();
 
-    // Setup close button
     const closeBtn = expandedView.querySelector('.close-expanded');
-    closeBtn.addEventListener('click', () => {
-        document.body.removeChild(expandedView);
-    });
-
-    // Also close on Escape key
-    document.addEventListener('keydown', function escapeListener(e) {
-        if (e.key === 'Escape') {
-            document.body.removeChild(expandedView);
-            document.removeEventListener('keydown', escapeListener);
-        }
-    });
+    closeBtn.addEventListener('click', () => document.body.removeChild(expandedView));
 }
 
-// Helper to get the appropriate Font Awesome icon for each language
+// Get Font Awesome icon for each language
 function getLanguageIcon(language) {
-    const icons = {
-        'javascript': 'js',
-        'python': 'python',
-        'java': 'java',
-        'html': 'html5',
-        'css': 'css3-alt',
-        'php': 'php',
-        'ruby': 'gem',
-        'csharp': 'microsoft',
-        'cpp': 'cuttlefish', // Not perfect but close
-        'go': 'google'
-    };
-
+    const icons = { javascript: 'js', python: 'python', java: 'java', go: 'google' };
     return icons[language] || 'code';
 }
 
-// Helper to capitalize first letter
+// Capitalize first letter
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 // Initialize on page load
-window.addEventListener('load', () => {
-    filterSnippets();
-});
+window.addEventListener('load', filterSnippets);

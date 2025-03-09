@@ -119,6 +119,37 @@
             box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
         }
 
+        /* Ensure number inputs have the same styling as text inputs */
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 15px;
+            background: var(--surface-light);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: var(--on-surface);
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 16px;
+            transition: var(--transition);
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
+        }
+
+        /* Hide number input arrows in most browsers */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* For Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
         textarea {
             min-height: 150px;
             resize: vertical;
@@ -461,6 +492,14 @@
         <div class="card">
             <h2>Create New Snippets</h2>
             <form id="snippetForm">
+
+                <div class="form-group">
+                    <label for="startId">Starting ID</label>
+                    <input type="number" id="startId" placeholder="Enter starting ID number" min="1" value="1">
+                    <div class="form-hint">First snippet will use this ID, with subsequent snippets incrementing from
+                        here</div>
+                </div>
+
                 <div class="form-group">
                     <label for="title" class="required">Snippet Title Base</label>
                     <input type="text" id="title" placeholder="Enter a descriptive title" required>
@@ -830,6 +869,10 @@
             }
 
             // Handle form submission
+            // Add this with the other DOM Elements
+            const startIdInput = document.getElementById('startId');
+
+            // Then modify the form submission handler where snippets are created
             snippetForm.addEventListener('submit', function (e) {
                 e.preventDefault();
                 if (!validateForm()) return;
@@ -837,15 +880,18 @@
                 // Clear existing snippets
                 snippets = [];
 
+                // Get the starting ID
+                let currentId = parseInt(startIdInput.value) || 1;
+
                 // Create snippets for each language
-                languages.forEach((lang, index) => {
+                languages.forEach((lang) => {
                     const codeInput = document.getElementById(`${lang.id}Code`);
                     const code = codeInput.value.trim();
 
                     if (code) {
                         const newSnippet = {
-                            id: index + 1,
-                            title: `${titleInput.value} - ${lang.name}`,
+                            id: currentId++, // Use current ID and increment for next one
+                            title: `${titleInput.value}`,
                             description: descriptionInput.value,
                             language: lang.id,
                             code: code,
@@ -854,6 +900,9 @@
                         };
 
                         snippets.push(newSnippet);
+
+                        // Update the language-specific snippet
+                        // Rest of the code stays the same...
 
                         // Update the language-specific snippet
                         const snippetElem = document.getElementById(`${lang.id}Snippet`);
