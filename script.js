@@ -1715,110 +1715,215 @@ const snippets = [
     ],
     [
         {
-          "id": 129,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "python",
-          "code": "from funcbox import snake_to_camel\nprint(snake_to_camel(\"......t\")) #string",
-          "created": "2025-03-09T09:58:01.351Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "python"
-          ]
+            "id": 129,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "python",
+            "code": "from funcbox import snake_to_camel\nprint(snake_to_camel(\"......t\")) #string",
+            "created": "2025-03-09T09:58:01.351Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "python"
+            ]
         },
         {
-          "id": 130,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "java",
-          "code": "public static String toCamelCase(String snake) {\n    String[] parts = snake.split(\"_\");\n    StringBuilder camelCase = new StringBuilder(parts[0]);\n    for (int i = 1; i < parts.length; i++) {\n        camelCase.append(parts[i].substring(0, 1).toUpperCase()).append(parts[i].substring(1));\n    }\n    return camelCase.toString();\n}",
-          "created": "2025-03-09T09:58:01.352Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "java"
-          ]
+            "id": 130,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "java",
+            "code": "public static String toCamelCase(String snake) {\n    String[] parts = snake.split(\"_\");\n    StringBuilder camelCase = new StringBuilder(parts[0]);\n    for (int i = 1; i < parts.length; i++) {\n        camelCase.append(parts[i].substring(0, 1).toUpperCase()).append(parts[i].substring(1));\n    }\n    return camelCase.toString();\n}",
+            "created": "2025-03-09T09:58:01.352Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "java"
+            ]
         },
         {
-          "id": 131,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "c",
-          "code": "#include <stdio.h>\n#include <ctype.h>\n#include <string.h>\n\nvoid toCamelCase(char *snake, char *camel) {\n    int i = 0, j = 0;\n    while (snake[i]) {\n        if (snake[i] == '_') {\n            i++;\n            camel[j++] = toupper(snake[i]);\n        } else {\n            camel[j++] = snake[i];\n        }\n        i++;\n    }\n    camel[j] = '\\0';\n}",
-          "created": "2025-03-09T09:58:01.353Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "c"
-          ]
+            "id": 131,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <ctype.h>\n#include <string.h>\n\nvoid toCamelCase(char *snake, char *camel) {\n    int i = 0, j = 0;\n    while (snake[i]) {\n        if (snake[i] == '_') {\n            i++;\n            camel[j++] = toupper(snake[i]);\n        } else {\n            camel[j++] = snake[i];\n        }\n        i++;\n    }\n    camel[j] = '\\0';\n}",
+            "created": "2025-03-09T09:58:01.353Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "c"
+            ]
         },
         {
-          "id": 132,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "cpp",
-          "code": "#include <iostream>\n#include <sstream>\n\nstd::string toCamelCase(const std::string &snake) {\n    std::stringstream ss(snake);\n    std::string word, camelCase;\n    bool firstWord = true;\n    while (getline(ss, word, '_')) {\n        if (firstWord) {\n            camelCase += word;\n            firstWord = false;\n        } else {\n            word[0] = toupper(word[0]);\n            camelCase += word;\n        }\n    }\n    return camelCase;\n}",
-          "created": "2025-03-09T09:58:01.353Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "cpp"
-          ]
+            "id": 132,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <sstream>\n\nstd::string toCamelCase(const std::string &snake) {\n    std::stringstream ss(snake);\n    std::string word, camelCase;\n    bool firstWord = true;\n    while (getline(ss, word, '_')) {\n        if (firstWord) {\n            camelCase += word;\n            firstWord = false;\n        } else {\n            word[0] = toupper(word[0]);\n            camelCase += word;\n        }\n    }\n    return camelCase;\n}",
+            "created": "2025-03-09T09:58:01.353Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "cpp"
+            ]
         },
         {
-          "id": 133,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "csharp",
-          "code": "using System;\nusing System.Linq;\n\nstatic string ToCamelCase(string snake) {\n    return string.Concat(snake.Split('_').Select((word, index) =>\n        index == 0 ? word : char.ToUpper(word[0]) + word.Substring(1)));\n}",
-          "created": "2025-03-09T09:58:01.354Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "csharp"
-          ]
+            "id": 133,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Linq;\n\nstatic string ToCamelCase(string snake) {\n    return string.Concat(snake.Split('_').Select((word, index) =>\n        index == 0 ? word : char.ToUpper(word[0]) + word.Substring(1)));\n}",
+            "created": "2025-03-09T09:58:01.354Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "csharp"
+            ]
         },
         {
-          "id": 134,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "kotlin",
-          "code": "fun toCamelCase(snake: String): String {\n    return snake.split(\"_\").mapIndexed { index, word ->\n        if (index == 0) word else word.replaceFirstChar { it.uppercase() }\n    }.joinToString(\"\")\n}",
-          "created": "2025-03-09T09:58:01.354Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "kotlin"
-          ]
+            "id": 134,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "kotlin",
+            "code": "fun toCamelCase(snake: String): String {\n    return snake.split(\"_\").mapIndexed { index, word ->\n        if (index == 0) word else word.replaceFirstChar { it.uppercase() }\n    }.joinToString(\"\")\n}",
+            "created": "2025-03-09T09:58:01.354Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "kotlin"
+            ]
         },
         {
-          "id": 135,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "javascript",
-          "code": "function toCamelCase(snake) {\n    return snake.split(\"_\").map((word, index) =>\n        index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)\n    ).join(\"\");\n}",
-          "created": "2025-03-09T09:58:01.356Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "javascript"
-          ]
+            "id": 135,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "javascript",
+            "code": "function toCamelCase(snake) {\n    return snake.split(\"_\").map((word, index) =>\n        index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)\n    ).join(\"\");\n}",
+            "created": "2025-03-09T09:58:01.356Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "javascript"
+            ]
         },
         {
-          "id": 136,
-          "title": "snake_to_camel",
-          "description": "Converts a string from snake case to camel case.",
-          "language": "go",
-          "code": "import (\n    \"strings\"\n)\n\nfunc toCamelCase(snake string) string {\n    parts := strings.Split(snake, \"_\")\n    for i := 1; i < len(parts); i++ {\n        parts[i] = strings.Title(parts[i])\n    }\n    return strings.Join(parts, \"\")\n}",
-          "created": "2025-03-09T09:58:01.356Z",
-          "tags": [
-            "snake_case",
-            "string",
-            "go"
-          ]
+            "id": 136,
+            "title": "snake_to_camel",
+            "description": "Converts a string from snake case to camel case.",
+            "language": "go",
+            "code": "import (\n    \"strings\"\n)\n\nfunc toCamelCase(snake string) string {\n    parts := strings.Split(snake, \"_\")\n    for i := 1; i < len(parts); i++ {\n        parts[i] = strings.Title(parts[i])\n    }\n    return strings.Join(parts, \"\")\n}",
+            "created": "2025-03-09T09:58:01.356Z",
+            "tags": [
+                "snake_case",
+                "string",
+                "go"
+            ]
         }
-      ]
+    ], [
+        {
+            "id": 137,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "python",
+            "code": "from funcbox import slugify\n\nprint(slugify(\"...\"))",
+            "created": "2025-03-09T09:57:29.102Z",
+            "tags": [
+                "slugify",
+                "string",
+                "python"
+            ]
+        },
+        {
+            "id": 138,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "java",
+            "code": "import java.text.Normalizer;\n\npublic static String slugify(String text) {\n    text = text.replaceAll(\"[^a-zA-Z0-9\\\\s-]\", \"\");\n    text = text.trim().toLowerCase();\n    return text.replaceAll(\"\\\\s+\", \"-\");\n}",
+            "created": "2025-03-09T09:57:29.105Z",
+            "tags": [
+                "slugify",
+                "string",
+                "java"
+            ]
+        },
+        {
+            "id": 139,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <ctype.h>\n#include <string.h>\n\nvoid slugify(const char *text, char *slug) {\n    int j = 0;\n    for (int i = 0; text[i] != '\\0'; i++) {\n        if (isalnum(text[i])) {\n            slug[j++] = tolower(text[i]);\n        } else if (isspace(text[i]) && (j > 0 && slug[j-1] != '-')) {\n            slug[j++] = '-';\n        }\n    }\n    slug[j] = '\\0';\n}",
+            "created": "2025-03-09T09:57:29.107Z",
+            "tags": [
+                "slugify",
+                "string",
+                "c"
+            ]
+        },
+        {
+            "id": 140,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <cctype>\n\nstd::string slugify(const std::string &text) {\n    std::string slug;\n    for (char ch : text) {\n        if (isalnum(ch)) {\n            slug += tolower(ch);\n        } else if (isspace(ch) && !slug.empty() && slug.back() != '-') {\n            slug += '-';\n        }\n    }\n    return slug;\n}",
+            "created": "2025-03-09T09:57:29.110Z",
+            "tags": [
+                "slugify",
+                "string",
+                "cpp"
+            ]
+        },
+        {
+            "id": 141,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Text.RegularExpressions;\n\npublic class Program {\n    public static string Slugify(string text) {\n        text = Regex.Replace(text, \"[^a-zA-Z0-9\\\\s-]\", \"\"); // Remove non-alphanumeric characters\n        text = text.Trim().ToLower(); // Convert to lowercase and trim\n        return Regex.Replace(text, \"\\\\s+\", \"-\"); // Replace spaces with hyphens\n    }\n}",
+            "created": "2025-03-09T09:57:29.113Z",
+            "tags": [
+                "slugify",
+                "string",
+                "csharp"
+            ]
+        },
+        {
+            "id": 142,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "kotlin",
+            "code": "fun slugify(text: String): String {\n    return text.replace(Regex(\"[^a-zA-Z0-9\\\\s-]\"), \"\")\n               .trim()\n               .lowercase()\n               .replace(Regex(\"\\\\s+\"), \"-\")\n}",
+            "created": "2025-03-09T09:57:29.126Z",
+            "tags": [
+                "slugify",
+                "string",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 143,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "javascript",
+            "code": "function slugify(text) {\n    return text.replace(/[^a-zA-Z0-9\\s-]/g, '') // Remove non-alphanumeric characters\n               .trim()\n               .toLowerCase()\n               .replace(/\\s+/g, '-'); // Replace spaces with hyphens\n}",
+            "created": "2025-03-09T09:57:29.130Z",
+            "tags": [
+                "slugify",
+                "string",
+                "javascript"
+            ]
+        },
+        {
+            "id": 144,
+            "title": "Slugify",
+            "description": "Converts a string into a URL-friendly slug by removing non-alphanumeric characters, stripping whitespace, and replacing spaces with hyphens.",
+            "language": "go",
+            "code": "import (\n    \"regexp\"\n    \"strings\"\n    \"unicode\"\n)\n\nfunc Slugify(text string) string {\n    re := regexp.MustCompile(`[^a-zA-Z0-9\\s-]`)\n    text = re.ReplaceAllString(text, \"\") // Remove non-alphanumeric characters\n    text = strings.TrimSpace(strings.ToLower(text)) // Convert to lowercase and trim spaces\n    return strings.ReplaceAll(text, \" \", \"-\") // Replace spaces with hyphens\n}",
+            "created": "2025-03-09T09:57:29.138Z",
+            "tags": [
+                "slugify",
+                "string",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
