@@ -2247,7 +2247,112 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],[
+        {
+          "id": 169,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "python",
+          "code": "from funcbox import calculate_age\nprint(calculate_age('.......'))  #date,month,year\nprint(calculate_age('..........', '%d/%m/%Y'))",
+          "created": "2025-03-09T12:14:42.355Z",
+          "tags": [
+            "age",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 170,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "java",
+          "code": "import java.time.LocalDate;\nimport java.time.Period;\n\npublic static int calculateAge(LocalDate birthDate) {\n    return Period.between(birthDate, LocalDate.now()).getYears();\n}",
+          "created": "2025-03-09T12:14:42.357Z",
+          "tags": [
+            "age",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 171,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "c",
+          "code": "#include <stdio.h>\n#include <time.h>\n\nint calculateAge(int birthYear, int birthMonth, int birthDay) {\n    time_t t = time(NULL);\n    struct tm now = *localtime(&t);\n    \n    int age = now.tm_year + 1900 - birthYear;\n    if (now.tm_mon + 1 < birthMonth || (now.tm_mon + 1 == birthMonth && now.tm_mday < birthDay)) {\n        age--;\n    }\n    return age;\n}",
+          "created": "2025-03-09T12:14:42.360Z",
+          "tags": [
+            "age",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 172,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "cpp",
+          "code": "#include <iostream>\n#include <ctime>\n\nint calculateAge(int birthYear, int birthMonth, int birthDay) {\n    time_t t = time(0);\n    tm *now = localtime(&t);\n    \n    int age = (now->tm_year + 1900) - birthYear;\n    if ((now->tm_mon + 1 < birthMonth) || (now->tm_mon + 1 == birthMonth && now->tm_mday < birthDay)) {\n        age--;\n    }\n    return age;\n}",
+          "created": "2025-03-09T12:14:42.362Z",
+          "tags": [
+            "age",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 173,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "csharp",
+          "code": "using System;\n\nstatic int CalculateAge(DateTime birthDate) {\n    DateTime today = DateTime.Today;\n    int age = today.Year - birthDate.Year;\n    if (birthDate > today.AddYears(-age)) age--;\n    return age;\n}",
+          "created": "2025-03-09T12:14:42.365Z",
+          "tags": [
+            "age",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 174,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "kotlin",
+          "code": "import java.time.LocalDate\nimport java.time.Period\n\nfun calculateAge(birthDate: LocalDate): Int {\n    return Period.between(birthDate, LocalDate.now()).years\n}",
+          "created": "2025-03-09T12:14:42.366Z",
+          "tags": [
+            "age",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 175,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "javascript",
+          "code": "function calculateAge(birthDate) {\n    let today = new Date();\n    let birth = new Date(birthDate);\n    let age = today.getFullYear() - birth.getFullYear();\n    if (today.getMonth() < birth.getMonth() || \n       (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {\n        age--;\n    }\n    return age;\n}",
+          "created": "2025-03-09T12:14:42.367Z",
+          "tags": [
+            "age",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 176,
+          "title": "age calculate",
+          "description": "Calculates the age in years based on a birth date provided as a string.",
+          "language": "go",
+          "code": "import (\n    \"time\"\n)\n\nfunc calculateAge(birthDate time.Time) int {\n    today := time.Now()\n    age := today.Year() - birthDate.Year()\n    if today.YearDay() < birthDate.YearDay() {\n        age--\n    }\n    return age\n}",
+          "created": "2025-03-09T12:14:42.368Z",
+          "tags": [
+            "age",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
