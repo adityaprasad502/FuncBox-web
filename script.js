@@ -2564,6 +2564,111 @@ const snippets = [
             "go"
           ]
         }
+      ],[
+        {
+          "id": 193,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "python",
+          "code": "from funcbox import mode_val\nprint(mode_val([.........]))  # list\nprint(mode_val([..........]))",
+          "created": "2025-03-09T12:43:42.997Z",
+          "tags": [
+            "mode",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 194,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "java",
+          "code": "import java.util.HashMap;\nimport java.util.Map;\n\npublic static int mode(int[] numbers) {\n    Map<Integer, Integer> freqMap = new HashMap<>();\n    int maxCount = 0, mode = numbers[0];\n\n    for (int num : numbers) {\n        freqMap.put(",
+          "created": "2025-03-09T12:43:42.998Z",
+          "tags": [
+            "mode",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 195,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "c",
+          "code": "#include <stdio.h>\n\nint mode(int numbers[], int size) {\n    int maxCount = 0, mode = numbers[0];\n\n    for (int i = 0; i < size; i++) {\n        int count = 0;\n        for (int j = 0; j < size; j++) {\n            if (numbers[j] == numbers[i]) count++;\n        }\n        if (count > maxCount) {\n            maxCount = count;\n            mode = numbers[i];\n        }\n    }\n    return mode;\n}",
+          "created": "2025-03-09T12:43:42.999Z",
+          "tags": [
+            "mode",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 196,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "cpp",
+          "code": "#include <vector>\n#include <unordered_map>\n\nint mode(std::vector<int>& numbers) {\n    std::unordered_map<int, int> freqMap;\n    int maxCount = 0, mode = numbers[0];\n\n    for (int num : numbers) {\n        freqMap[num]++;\n        if (freqMap[num] > maxCount) {\n            maxCount = freqMap[num];\n            mode = num;\n        }\n    }\n    return mode;\n}",
+          "created": "2025-03-09T12:43:43.001Z",
+          "tags": [
+            "mode",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 197,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "csharp",
+          "code": "using System;\nusing System.Linq;\nusing System.Collections.Generic;\n\nstatic int Mode(int[] numbers) {\n    return numbers.GroupBy(n => n)\n                  .OrderByDescending(g => g.Count())\n                  .First()\n                  .Key;\n}",
+          "created": "2025-03-09T12:43:43.002Z",
+          "tags": [
+            "mode",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 198,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "kotlin",
+          "code": "fun mode(numbers: List<Int>): Int {\n    return numbers.groupingBy { it }\n                  .eachCount()\n                  .maxByOrNull { it.value }!!\n                  .key\n}",
+          "created": "2025-03-09T12:43:43.003Z",
+          "tags": [
+            "mode",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 199,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "javascript",
+          "code": "function mode(numbers) {\n    let freqMap = {};\n    let maxCount = 0, mode;\n\n    numbers.forEach(num => {\n        freqMap[num] = (freqMap[num] || 0) + 1;\n        if (freqMap[num] > maxCount) {\n            maxCount = freqMap[num];\n            mode = num;\n        }\n    });\n\n    return mode;\n}",
+          "created": "2025-03-09T12:43:43.004Z",
+          "tags": [
+            "mode",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 200,
+          "title": "mode",
+          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+          "language": "go",
+          "code": "import \"sort\"\n\nfunc mode(numbers []int) int {\n    freqMap := make(map[int]int)\n    maxCount := 0\n    mode := numbers[0]\n\n    for _, num := range numbers {\n        freqMap[num]++\n        if freqMap[num] > maxCount {\n            maxCount = freqMap[num]\n            mode = num\n        }\n    }\n    return mode\n}",
+          "created": "2025-03-09T12:43:43.005Z",
+          "tags": [
+            "mode",
+            "math",
+            "go"
+          ]
+        }
       ]
 ];
 
