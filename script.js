@@ -1496,110 +1496,223 @@ const snippets = [
     ],
     [
         {
-          "id": 113,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "python",
-          "code": "from funcbox import lcm\nprint(lcm(..... , .....)) #two values",
-          "created": "2025-03-09T09:49:46.050Z",
-          "tags": [
-            "lcm",
-            "math",
-            "python"
-          ]
+            "id": 113,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "python",
+            "code": "from funcbox import lcm\nprint(lcm(..... , .....)) #two values",
+            "created": "2025-03-09T09:49:46.050Z",
+            "tags": [
+                "lcm",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 114,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "java",
-          "code": "public static int lcm(int a, int b) {\n    return Math.abs(a * b) / gcd(a, b);\n}",
-          "created": "2025-03-09T09:49:46.052Z",
-          "tags": [
-            "lcm",
-            "math",
-            "java"
-          ]
+            "id": 114,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "java",
+            "code": "public static int lcm(int a, int b) {\n    return Math.abs(a * b) / gcd(a, b);\n}",
+            "created": "2025-03-09T09:49:46.052Z",
+            "tags": [
+                "lcm",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 115,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "c",
-          "code": "int lcm(int a, int b) {\n    return (a * b) / gcd(a, b);\n}",
-          "created": "2025-03-09T09:49:46.052Z",
-          "tags": [
-            "lcm",
-            "math",
-            "c"
-          ]
+            "id": 115,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "c",
+            "code": "int lcm(int a, int b) {\n    return (a * b) / gcd(a, b);\n}",
+            "created": "2025-03-09T09:49:46.052Z",
+            "tags": [
+                "lcm",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 116,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "cpp",
-          "code": "int lcm(int a, int b) {\n    return (a * b) / gcd(a, b);\n}",
-          "created": "2025-03-09T09:49:46.052Z",
-          "tags": [
-            "lcm",
-            "math",
-            "cpp"
-          ]
+            "id": 116,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "cpp",
+            "code": "int lcm(int a, int b) {\n    return (a * b) / gcd(a, b);\n}",
+            "created": "2025-03-09T09:49:46.052Z",
+            "tags": [
+                "lcm",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 117,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "csharp",
-          "code": "static int LCM(int a, int b) {\n    return Math.Abs(a * b) / GCD(a, b);\n}",
-          "created": "2025-03-09T09:49:46.052Z",
-          "tags": [
-            "lcm",
-            "math",
-            "csharp"
-          ]
+            "id": 117,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "csharp",
+            "code": "static int LCM(int a, int b) {\n    return Math.Abs(a * b) / GCD(a, b);\n}",
+            "created": "2025-03-09T09:49:46.052Z",
+            "tags": [
+                "lcm",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 118,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "kotlin",
-          "code": "fun lcm(a: Int, b: Int): Int {\n    return (a * b) / gcd(a, b)\n}",
-          "created": "2025-03-09T09:49:46.053Z",
-          "tags": [
-            "lcm",
-            "math",
-            "kotlin"
-          ]
+            "id": 118,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "kotlin",
+            "code": "fun lcm(a: Int, b: Int): Int {\n    return (a * b) / gcd(a, b)\n}",
+            "created": "2025-03-09T09:49:46.053Z",
+            "tags": [
+                "lcm",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 119,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "javascript",
-          "code": "function lcm(a, b) {\n    return Math.abs(a * b) / gcd(a, b);\n}",
-          "created": "2025-03-09T09:49:46.053Z",
-          "tags": [
-            "lcm",
-            "math",
-            "javascript"
-          ]
+            "id": 119,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "javascript",
+            "code": "function lcm(a, b) {\n    return Math.abs(a * b) / gcd(a, b);\n}",
+            "created": "2025-03-09T09:49:46.053Z",
+            "tags": [
+                "lcm",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 120,
-          "title": "lcm ",
-          "description": "Calculates the least common multiple of two numbers",
-          "language": "go",
-          "code": "func lcm(a, b int) int {\n    return (a * b) / gcd(a, b)\n}",
-          "created": "2025-03-09T09:49:46.053Z",
-          "tags": [
-            "lcm",
-            "math",
-            "go"
-          ]
+            "id": 120,
+            "title": "lcm ",
+            "description": "Calculates the least common multiple of two numbers",
+            "language": "go",
+            "code": "func lcm(a, b int) int {\n    return (a * b) / gcd(a, b)\n}",
+            "created": "2025-03-09T09:49:46.053Z",
+            "tags": [
+                "lcm",
+                "math",
+                "go"
+            ]
         }
-      ]
+    ], [
+        {
+            "id": 121,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "python",
+            "code": "from funcbox import camel_to_snake\n\nprint(camel_to_snake(...))",
+            "created": "2025-03-09T09:48:02.808Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "python"
+            ]
+        },
+        {
+            "id": 122,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "java",
+            "code": "public static String camelToSnake(String name) {\n    return name.replaceAll(\"(?<!^)([A-Z])\", \"_$1\").toLowerCase();\n}",
+            "created": "2025-03-09T09:48:02.810Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "java"
+            ]
+        },
+        {
+            "id": 123,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <ctype.h>\n#include <string.h>\n\nvoid camel_to_snake(const char *camel, char *snake) {\n    int j = 0;\n    for (int i = 0; camel[i] != '\\0'; i++) {\n        if (isupper(camel[i]) && i != 0) {\n            snake[j++] = '_';\n        }\n        snake[j++] = tolower(camel[i]);\n    }\n    snake[j] = '\\0';\n}",
+            "created": "2025-03-09T09:48:02.812Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "c"
+            ]
+        },
+        {
+            "id": 124,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <cctype>\n\nstd::string camel_to_snake(const std::string &camel) {\n    std::string snake;\n    for (char ch : camel) {\n        if (isupper(ch) && !snake.empty()) {\n            snake += '_';\n        }\n        snake += tolower(ch);\n    }\n    return snake;\n}",
+            "created": "2025-03-09T09:48:02.814Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "cpp"
+            ]
+        },
+        {
+            "id": 125,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Text.RegularExpressions;\n\npublic class Program {\n    public static string CamelToSnake(string name) {\n        return Regex.Replace(name, \"(?<!^)([A-Z])\", \"_$1\").ToLower();\n    }\n}",
+            "created": "2025-03-09T09:48:02.816Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "csharp"
+            ]
+        },
+        {
+            "id": 126,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "kotlin",
+            "code": "fun camelToSnake(name: String): String {\n    return name.replace(Regex(\"(?<!^)([A-Z])\"), \"_$1\").lowercase()\n}",
+            "created": "2025-03-09T09:48:02.826Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 127,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "javascript",
+            "code": "function camelToSnake(name) {\n    return name.replace(/(?<!^)([A-Z])/g, \"_$1\").toLowerCase();\n}",
+            "created": "2025-03-09T09:48:02.828Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "javascript"
+            ]
+        },
+        {
+            "id": 128,
+            "title": "Camel to Snake",
+            "description": "Converts a string from camel case to snake case.",
+            "language": "go",
+            "code": "import (\n    \"strings\"\n    \"unicode\"\n)\n\nfunc CamelToSnake(name string) string {\n    var result strings.Builder\n    for i, ch := range name {\n        if unicode.IsUpper(ch) && i != 0 {\n            result.WriteRune('_')\n        }\n        result.WriteRune(unicode.ToLower(ch))\n    }\n    return result.String()\n}",
+            "created": "2025-03-09T09:48:02.831Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
