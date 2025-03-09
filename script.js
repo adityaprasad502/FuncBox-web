@@ -213,118 +213,223 @@ const snippets = [
     ],
     [
         {
-          "id": 17,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "python",
-          "code": "from funcbox import factorial\nprint(factorial(....))  // single value\nprint(factorial([....])) // list",
-          "created": "2025-03-09T08:26:35.722Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "python"
-          ]
+            "id": 17,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "python",
+            "code": "from funcbox import factorial\nprint(factorial(....))  # single value\nprint(factorial([....])) # multiple value",
+            "created": "2025-03-09T08:26:35.722Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 18,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "java",
-          "code": "public static long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
-          "created": "2025-03-09T08:26:35.736Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "java"
-          ]
+            "id": 18,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "java",
+            "code": "public static long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
+            "created": "2025-03-09T08:26:35.736Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 19,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "c",
-          "code": "long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
-          "created": "2025-03-09T08:26:35.743Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "c"
-          ]
+            "id": 19,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "c",
+            "code": "long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
+            "created": "2025-03-09T08:26:35.743Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 20,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "cpp",
-          "code": "long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
-          "created": "2025-03-09T08:26:35.746Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "cpp"
-          ]
+            "id": 20,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "cpp",
+            "code": "long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
+            "created": "2025-03-09T08:26:35.746Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 21,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "csharp",
-          "code": "static long Factorial(int n) {\n    if (n == 0) return 1;\n    return n * Factorial(n - 1);\n}",
-          "created": "2025-03-09T08:26:35.753Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "csharp"
-          ]
+            "id": 21,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "csharp",
+            "code": "static long Factorial(int n) {\n    if (n == 0) return 1;\n    return n * Factorial(n - 1);\n}",
+            "created": "2025-03-09T08:26:35.753Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 22,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "kotlin",
-          "code": "fun factorial(n: Int): Long {\n    return if (n == 0) 1 else n * factorial(n - 1)\n}",
-          "created": "2025-03-09T08:26:35.779Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "kotlin"
-          ]
+            "id": 22,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "kotlin",
+            "code": "fun factorial(n: Int): Long {\n    return if (n == 0) 1 else n * factorial(n - 1)\n}",
+            "created": "2025-03-09T08:26:35.779Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 23,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "javascript",
-          "code": "function factorial(n) {\n    return n === 0 ? 1 : n * factorial(n - 1);\n}",
-          "created": "2025-03-09T08:26:35.782Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "javascript"
-          ]
+            "id": 23,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "javascript",
+            "code": "function factorial(n) {\n    return n === 0 ? 1 : n * factorial(n - 1);\n}",
+            "created": "2025-03-09T08:26:35.782Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 24,
-          "title": "factorial",
-          "description": "find the factorial of the given number\n",
-          "language": "go",
-          "code": "func factorial(n int) int {\n    if n == 0 {\n        return 1\n    }\n    return n * factorial(n-1)\n}",
-          "created": "2025-03-09T08:26:35.784Z",
-          "tags": [
-            "fact",
-            "factorial",
-            "math",
-            "go"
-          ]
+            "id": 24,
+            "title": "factorial",
+            "description": "find the factorial of the given number\n",
+            "language": "go",
+            "code": "func factorial(n int) int {\n    if n == 0 {\n        return 1\n    }\n    return n * factorial(n-1)\n}",
+            "created": "2025-03-09T08:26:35.784Z",
+            "tags": [
+                "fact",
+                "factorial",
+                "math",
+                "go"
+            ]
         }
-      ]
+    ], [
+        {
+            "id": 25,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "python",
+            "code": "from funcbox import is_prime\n\nprint(is_prime(...)) # single variable\nprint(is_prime([.....])) # multiple variable",
+            "created": "2025-03-09T08:26:09.325Z",
+            "tags": [
+                "prime",
+                "math",
+                "python"
+            ]
+        },
+        {
+            "id": 26,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "java",
+            "code": "public static boolean isPrime(int num) {\n    if (num < 2) return false;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) return false;\n    }\n    return true;\n}",
+            "created": "2025-03-09T08:26:09.328Z",
+            "tags": [
+                "prime",
+                "math",
+                "java"
+            ]
+        },
+        {
+            "id": 27,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "c",
+            "code": "#include <stdbool.h>\n\nbool is_prime(int num) {\n    if (num < 2) return false;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) return false;\n    }\n    return true;\n}",
+            "created": "2025-03-09T08:26:09.330Z",
+            "tags": [
+                "prime",
+                "math",
+                "c"
+            ]
+        },
+        {
+            "id": 28,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "cpp",
+            "code": "#include <iostream>\n\nbool is_prime(int num) {\n    if (num < 2) return false;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) return false;\n    }\n    return true;\n}",
+            "created": "2025-03-09T08:26:09.332Z",
+            "tags": [
+                "prime",
+                "math",
+                "cpp"
+            ]
+        },
+        {
+            "id": 29,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "csharp",
+            "code": "public static bool IsPrime(int num) {\n    if (num < 2) return false;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) return false;\n    }\n    return true;\n}",
+            "created": "2025-03-09T08:26:09.336Z",
+            "tags": [
+                "prime",
+                "math",
+                "csharp"
+            ]
+        },
+        {
+            "id": 30,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "kotlin",
+            "code": "fun isPrime(num: Int): Boolean {\n    if (num < 2) return false\n    for (i in 2..Math.sqrt(num.toDouble()).toInt()) {\n        if (num % i == 0) return false\n    }\n    return true\n}",
+            "created": "2025-03-09T08:26:09.347Z",
+            "tags": [
+                "prime",
+                "math",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 31,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "javascript",
+            "code": "function isPrime(num) {\n    if (num < 2) return false;\n    for (let i = 2; i * i <= num; i++) {\n        if (num % i === 0) return false;\n    }\n    return true;\n}",
+            "created": "2025-03-09T08:26:09.349Z",
+            "tags": [
+                "prime",
+                "math",
+                "javascript"
+            ]
+        },
+        {
+            "id": 32,
+            "title": "prime number",
+            "description": "to find if the given number is a prime or not",
+            "language": "go",
+            "code": "func IsPrime(num int) bool {\n    if num < 2 {\n        return false\n    }\n    for i := 2; i*i <= num; i++ {\n        if num%i == 0 {\n            return false\n        }\n    }\n    return true\n}",
+            "created": "2025-03-09T08:26:09.353Z",
+            "tags": [
+                "prime",
+                "math",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
@@ -452,7 +557,6 @@ function renderSnippets(snippetsToRender) {
         <div class="code-content">
             <div class="copy-success">Copied!</div>
             <pre class="line-numbers"><code class="language-${snippet.language}">${escapeHtml(snippet.code)}</code></pre>
-            <p class="snippet-date">Created: ${dateFormatted}</p>
         </div>`;
 
         snippetDisplay.appendChild(card);
