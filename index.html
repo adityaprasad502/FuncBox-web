@@ -1,3 +1,4 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +15,7 @@
             --surface: rgba(255, 255, 255, 0.1);
             --on-surface: #FFFFFF;
             --error: #FF5252;
+            --success: #4CAF50;
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             --transition: all 0.4s ease-in-out;
         }
@@ -109,11 +111,22 @@
             color: var(--secondary);
         }
 
-        .error-message {
-            color: var(--error);
-            font-size: 0.9rem;
+        .message {
             margin-top: 10px;
+            font-size: 0.9rem;
+            padding: 8px;
+            border-radius: 5px;
             display: none;
+        }
+
+        .error-message {
+            background-color: var(--error);
+            color: white;
+        }
+
+        .success-message {
+            background-color: var(--success);
+            color: white;
         }
 
         /* Slide Animation */
@@ -175,8 +188,9 @@
                     <label for="login-password">Password</label>
                     <input type="password" id="login-password" placeholder="Enter password">
                 </div>
-                <button type="button" onclick="login()">Login</button>
-                <p class="error-message" id="login-error">Invalid username or password</p>
+                <button type="button" id="login-button">Login</button>
+                <div class="message error-message" id="login-error"></div>
+                <div class="message success-message" id="login-success"></div>
             </form>
 
             <!-- Sign-Up Form -->
@@ -193,64 +207,131 @@
                     <label for="signup-confirm-password">Confirm Password</label>
                     <input type="password" id="signup-confirm-password" placeholder="Confirm password">
                 </div>
-                <button type="button" onclick="signup()">Sign Up</button>
-                <p class="error-message" id="signup-error">Error signing up</p>
+                <button type="button" id="signup-button">Sign Up</button>
+                <div class="message error-message" id="signup-error"></div>
+                <div class="message success-message" id="signup-success"></div>
             </form>
         </div>
 
-        <p class="toggle-text" onclick="toggleForms()">Don't have an account? Sign up</p>
+        <p class="toggle-text" id="toggle-text">Don't have an account? Sign up</p>
     </div>
 
     <script>
-        function toggleForms() {
+        document.addEventListener('DOMContentLoaded', function () {
             const container = document.getElementById('auth-container');
             const formTitle = document.getElementById('form-title');
-            const toggleText = document.querySelector('.toggle-text');
+            const toggleText = document.getElementById('toggle-text');
+            const loginButton = document.getElementById('login-button');
+            const signupButton = document.getElementById('signup-button');
+            const loginError = document.getElementById('login-error');
+            const loginSuccess = document.getElementById('login-success');
+            const signupError = document.getElementById('signup-error');
+            const signupSuccess = document.getElementById('signup-success');
 
-            if (container.classList.contains('active')) {
-                container.classList.remove('active');
-                formTitle.textContent = "Login";
-                toggleText.textContent = "Don't have an account? Sign up";
-            } else {
-                container.classList.add('active');
-                formTitle.textContent = "Sign Up";
-                toggleText.textContent = "Already have an account? Login";
+            // Toggle between login and signup forms
+            toggleText.addEventListener('click', function () {
+                resetMessages();
+                if (container.classList.contains('active')) {
+                    container.classList.remove('active');
+                    formTitle.textContent = "Login";
+                    toggleText.textContent = "Don't have an account? Sign up";
+                } else {
+                    container.classList.add('active');
+                    formTitle.textContent = "Sign Up";
+                    toggleText.textContent = "Already have an account? Login";
+                }
+            });
+
+            // Handle login
+            loginButton.addEventListener('click', function () {
+                resetMessages();
+                const username = document.getElementById('login-username').value;
+                const password = document.getElementById('login-password').value;
+
+                if (!username || !password) {
+                    showMessage(loginError, 'Please enter both username and password');
+                    return;
+                }
+
+                // Send login request
+                const formData = new FormData();
+                formData.append('username', username);
+                formData.append('password', password);
+
+                fetch('http://127.0.0.1:5000/login', {
+                    method: 'GET',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            showMessage(loginSuccess, data.message);
+                            setTimeout(() => {
+                                window.location.href = '/search';
+                            }, 1000);
+                        } else {
+                            showMessage(loginError, data.message);
+                        }
+                    })
+                    .catch(error => {
+                        showMessage(loginError, 'An error occurred. Please try again.');
+                    });
+            });
+
+            // Handle signup
+            signupButton.addEventListener('click', function () {
+                resetMessages();
+                const username = document.getElementById('signup-username').value;
+                const password = document.getElementById('signup-password').value;
+                const confirmPassword = document.getElementById('signup-confirm-password').value;
+
+                if (!username || !password || !confirmPassword) {
+                    showMessage(signupError, 'Please fill in all fields');
+                    return;
+                }
+
+                // Send signup request
+                const formData = new FormData();
+                formData.append('username', username);
+                formData.append('password', password);
+                formData.append('confirm_password', confirmPassword);
+
+                fetch('http://127.0.0.1:5000/signup', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            showMessage(signupSuccess, data.message);
+                            // Switch to login form after successful signup
+                            setTimeout(() => {
+                                container.classList.remove('active');
+                                formTitle.textContent = "Login";
+                                toggleText.textContent = "Don't have an account? Sign up";
+                            }, 2000);
+                        } else {
+                            showMessage(signupError, data.message);
+                        }
+                    })
+                    .catch(error => {
+                        showMessage(signupError, 'An error occurred. Please try again.');
+                    });
+            });
+
+            // Helper functions
+            function resetMessages() {
+                loginError.style.display = 'none';
+                loginSuccess.style.display = 'none';
+                signupError.style.display = 'none';
+                signupSuccess.style.display = 'none';
             }
-        }
 
-        function login() {
-            const username = document.getElementById('login-username').value;
-            const password = document.getElementById('login-password').value;
-            const error = document.getElementById('login-error');
-
-            error.style.display = 'none';
-
-            if (username === "admin" && password === "1234") {
-                alert("Login Successful!");
-                window.location.href = "search.html";
-            } else {
-                error.textContent = "Invalid username or password";
-                error.style.display = 'block';
+            function showMessage(element, message) {
+                element.textContent = message;
+                element.style.display = 'block';
             }
-        }
-
-        function signup() {
-            const username = document.getElementById('signup-username').value;
-            const password = document.getElementById('signup-password').value;
-            const confirmPassword = document.getElementById('signup-confirm-password').value;
-            const error = document.getElementById('signup-error');
-
-            error.style.display = 'none';
-
-            if (password !== confirmPassword) {
-                error.textContent = "Passwords do not match.";
-                error.style.display = 'block';
-                return;
-            }
-
-            alert("Sign-Up Successful! Please log in.");
-            toggleForms();
-        }
+        });
     </script>
 
 </body>
