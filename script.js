@@ -852,7 +852,113 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],
+    [
+        {
+          "id": 65,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "python",
+          "code": "from funcbox import harshad\nprint(is_harshad(....))  # single\nprint(is_harshad([.....])) #list",
+          "created": "2025-03-09T09:06:14.288Z",
+          "tags": [
+            "harshad",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 66,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "java",
+          "code": "public static boolean isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return n % sum == 0;\n}",
+          "created": "2025-03-09T09:06:14.289Z",
+          "tags": [
+            "harshad",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 67,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "c",
+          "code": "#include <stdio.h>\n\nint isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return (n % sum == 0);\n}",
+          "created": "2025-03-09T09:06:14.290Z",
+          "tags": [
+            "harshad",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 68,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "cpp",
+          "code": "bool isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return (n % sum == 0);\n}",
+          "created": "2025-03-09T09:06:14.290Z",
+          "tags": [
+            "harshad",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 69,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "csharp",
+          "code": "static bool IsHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return n % sum == 0;\n}",
+          "created": "2025-03-09T09:06:14.290Z",
+          "tags": [
+            "harshad",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 70,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "kotlin",
+          "code": "fun isHarshad(n: Int): Boolean {\n    val sum = n.toString().sumOf { it.digitToInt() }\n    return n % sum == 0\n}",
+          "created": "2025-03-09T09:06:14.291Z",
+          "tags": [
+            "harshad",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 71,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "javascript",
+          "code": "function isHarshad(n) {\n    let sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp = Math.floor(temp / 10);\n    }\n    return n % sum === 0;\n}",
+          "created": "2025-03-09T09:06:14.292Z",
+          "tags": [
+            "harshad",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 72,
+          "title": "harshad number",
+          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+          "language": "go",
+          "code": "func isHarshad(n int) bool {\n    sum, temp := 0, n\n    for temp > 0 {\n        sum += temp % 10\n        temp /= 10\n    }\n    return n%sum == 0\n}",
+          "created": "2025-03-09T09:06:14.292Z",
+          "tags": [
+            "harshad",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
