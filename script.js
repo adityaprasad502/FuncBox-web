@@ -1063,7 +1063,113 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],
+    [
+        {
+          "id": 81,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "python",
+          "code": "from funcbox import average\nprint(average(......)) #tuple",
+          "created": "2025-03-09T09:16:35.945Z",
+          "tags": [
+            "avg",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 82,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "java",
+          "code": "public static double average(int[] numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.length;\n}",
+          "created": "2025-03-09T09:16:35.946Z",
+          "tags": [
+            "avg",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 83,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "c",
+          "code": "#include <stdio.h>\n\ndouble average(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
+          "created": "2025-03-09T09:16:35.947Z",
+          "tags": [
+            "avg",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 84,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "cpp",
+          "code": "double average(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
+          "created": "2025-03-09T09:16:35.948Z",
+          "tags": [
+            "avg",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 85,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "csharp",
+          "code": "static double Average(int[] numbers) {\n    int sum = 0;\n    foreach (int num in numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.Length;\n}",
+          "created": "2025-03-09T09:16:35.948Z",
+          "tags": [
+            "avg",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 86,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "kotlin",
+          "code": "fun average(numbers: IntArray): Double {\n    return numbers.average()\n}",
+          "created": "2025-03-09T09:16:35.949Z",
+          "tags": [
+            "avg",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 87,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "javascript",
+          "code": "function average(numbers) {\n    let sum = numbers.reduce((acc, num) => acc + num, 0);\n    return sum / numbers.length;\n}",
+          "created": "2025-03-09T09:16:35.950Z",
+          "tags": [
+            "avg",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 88,
+          "title": "average",
+          "description": " Calculates the average of a list of numbers.",
+          "language": "go",
+          "code": "func average(numbers []int) float64 {\n    sum := 0\n    for _, num := range numbers {\n        sum += num\n    }\n    return float64(sum) / float64(len(numbers))\n}",
+          "created": "2025-03-09T09:16:35.950Z",
+          "tags": [
+            "avg",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
