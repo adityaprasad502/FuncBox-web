@@ -562,14 +562,22 @@
                 <div class="stat-label">Languages</div>
             </div>
         </div>
+        <button id="logoutButton"
+            style="position: absolute; top: 20px; right: 20px; background-color: var(--error); color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Logout</button>
     </div>
+
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function () {
+            window.location.href = '/index.html';
+        });
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

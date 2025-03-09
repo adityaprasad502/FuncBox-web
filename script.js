@@ -2247,429 +2247,429 @@ const snippets = [
                 "go"
             ]
         }
-    ],[
+    ], [
         {
-          "id": 169,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "python",
-          "code": "from funcbox import calculate_age\nprint(calculate_age('.......'))  #date,month,year\nprint(calculate_age('..........', '%d/%m/%Y'))",
-          "created": "2025-03-09T12:14:42.355Z",
-          "tags": [
-            "age",
-            "math",
-            "python"
-          ]
+            "id": 169,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "python",
+            "code": "from funcbox import calculate_age\nprint(calculate_age('.......'))  #date,month,year\nprint(calculate_age('..........', '%d/%m/%Y'))",
+            "created": "2025-03-09T12:14:42.355Z",
+            "tags": [
+                "age",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 170,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "java",
-          "code": "import java.time.LocalDate;\nimport java.time.Period;\n\npublic static int calculateAge(LocalDate birthDate) {\n    return Period.between(birthDate, LocalDate.now()).getYears();\n}",
-          "created": "2025-03-09T12:14:42.357Z",
-          "tags": [
-            "age",
-            "math",
-            "java"
-          ]
+            "id": 170,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "java",
+            "code": "import java.time.LocalDate;\nimport java.time.Period;\n\npublic static int calculateAge(LocalDate birthDate) {\n    return Period.between(birthDate, LocalDate.now()).getYears();\n}",
+            "created": "2025-03-09T12:14:42.357Z",
+            "tags": [
+                "age",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 171,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "c",
-          "code": "#include <stdio.h>\n#include <time.h>\n\nint calculateAge(int birthYear, int birthMonth, int birthDay) {\n    time_t t = time(NULL);\n    struct tm now = *localtime(&t);\n    \n    int age = now.tm_year + 1900 - birthYear;\n    if (now.tm_mon + 1 < birthMonth || (now.tm_mon + 1 == birthMonth && now.tm_mday < birthDay)) {\n        age--;\n    }\n    return age;\n}",
-          "created": "2025-03-09T12:14:42.360Z",
-          "tags": [
-            "age",
-            "math",
-            "c"
-          ]
+            "id": 171,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <time.h>\n\nint calculateAge(int birthYear, int birthMonth, int birthDay) {\n    time_t t = time(NULL);\n    struct tm now = *localtime(&t);\n    \n    int age = now.tm_year + 1900 - birthYear;\n    if (now.tm_mon + 1 < birthMonth || (now.tm_mon + 1 == birthMonth && now.tm_mday < birthDay)) {\n        age--;\n    }\n    return age;\n}",
+            "created": "2025-03-09T12:14:42.360Z",
+            "tags": [
+                "age",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 172,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "cpp",
-          "code": "#include <iostream>\n#include <ctime>\n\nint calculateAge(int birthYear, int birthMonth, int birthDay) {\n    time_t t = time(0);\n    tm *now = localtime(&t);\n    \n    int age = (now->tm_year + 1900) - birthYear;\n    if ((now->tm_mon + 1 < birthMonth) || (now->tm_mon + 1 == birthMonth && now->tm_mday < birthDay)) {\n        age--;\n    }\n    return age;\n}",
-          "created": "2025-03-09T12:14:42.362Z",
-          "tags": [
-            "age",
-            "math",
-            "cpp"
-          ]
+            "id": 172,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <ctime>\n\nint calculateAge(int birthYear, int birthMonth, int birthDay) {\n    time_t t = time(0);\n    tm *now = localtime(&t);\n    \n    int age = (now->tm_year + 1900) - birthYear;\n    if ((now->tm_mon + 1 < birthMonth) || (now->tm_mon + 1 == birthMonth && now->tm_mday < birthDay)) {\n        age--;\n    }\n    return age;\n}",
+            "created": "2025-03-09T12:14:42.362Z",
+            "tags": [
+                "age",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 173,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "csharp",
-          "code": "using System;\n\nstatic int CalculateAge(DateTime birthDate) {\n    DateTime today = DateTime.Today;\n    int age = today.Year - birthDate.Year;\n    if (birthDate > today.AddYears(-age)) age--;\n    return age;\n}",
-          "created": "2025-03-09T12:14:42.365Z",
-          "tags": [
-            "age",
-            "math",
-            "csharp"
-          ]
+            "id": 173,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "csharp",
+            "code": "using System;\n\nstatic int CalculateAge(DateTime birthDate) {\n    DateTime today = DateTime.Today;\n    int age = today.Year - birthDate.Year;\n    if (birthDate > today.AddYears(-age)) age--;\n    return age;\n}",
+            "created": "2025-03-09T12:14:42.365Z",
+            "tags": [
+                "age",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 174,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "kotlin",
-          "code": "import java.time.LocalDate\nimport java.time.Period\n\nfun calculateAge(birthDate: LocalDate): Int {\n    return Period.between(birthDate, LocalDate.now()).years\n}",
-          "created": "2025-03-09T12:14:42.366Z",
-          "tags": [
-            "age",
-            "math",
-            "kotlin"
-          ]
+            "id": 174,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "kotlin",
+            "code": "import java.time.LocalDate\nimport java.time.Period\n\nfun calculateAge(birthDate: LocalDate): Int {\n    return Period.between(birthDate, LocalDate.now()).years\n}",
+            "created": "2025-03-09T12:14:42.366Z",
+            "tags": [
+                "age",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 175,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "javascript",
-          "code": "function calculateAge(birthDate) {\n    let today = new Date();\n    let birth = new Date(birthDate);\n    let age = today.getFullYear() - birth.getFullYear();\n    if (today.getMonth() < birth.getMonth() || \n       (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {\n        age--;\n    }\n    return age;\n}",
-          "created": "2025-03-09T12:14:42.367Z",
-          "tags": [
-            "age",
-            "math",
-            "javascript"
-          ]
+            "id": 175,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "javascript",
+            "code": "function calculateAge(birthDate) {\n    let today = new Date();\n    let birth = new Date(birthDate);\n    let age = today.getFullYear() - birth.getFullYear();\n    if (today.getMonth() < birth.getMonth() || \n       (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) {\n        age--;\n    }\n    return age;\n}",
+            "created": "2025-03-09T12:14:42.367Z",
+            "tags": [
+                "age",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 176,
-          "title": "age calculate",
-          "description": "Calculates the age in years based on a birth date provided as a string.",
-          "language": "go",
-          "code": "import (\n    \"time\"\n)\n\nfunc calculateAge(birthDate time.Time) int {\n    today := time.Now()\n    age := today.Year() - birthDate.Year()\n    if today.YearDay() < birthDate.YearDay() {\n        age--\n    }\n    return age\n}",
-          "created": "2025-03-09T12:14:42.368Z",
-          "tags": [
-            "age",
-            "math",
-            "go"
-          ]
+            "id": 176,
+            "title": "age calculate",
+            "description": "Calculates the age in years based on a birth date provided as a string.",
+            "language": "go",
+            "code": "import (\n    \"time\"\n)\n\nfunc calculateAge(birthDate time.Time) int {\n    today := time.Now()\n    age := today.Year() - birthDate.Year()\n    if today.YearDay() < birthDate.YearDay() {\n        age--\n    }\n    return age\n}",
+            "created": "2025-03-09T12:14:42.368Z",
+            "tags": [
+                "age",
+                "math",
+                "go"
+            ]
         }
-      ],
-      [
+    ],
+    [
         {
-          "id": 177,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "python",
-          "code": "from funcbox import mean_val\nprint(mean_val([........])) #list",
-          "created": "2025-03-09T12:23:04.568Z",
-          "tags": [
-            "mean",
-            "math",
-            "python"
-          ]
+            "id": 177,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "python",
+            "code": "from funcbox import mean_val\nprint(mean_val([........])) #list",
+            "created": "2025-03-09T12:23:04.568Z",
+            "tags": [
+                "mean",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 178,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "java",
-          "code": "public static double mean(int[] numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.length;\n}",
-          "created": "2025-03-09T12:23:04.570Z",
-          "tags": [
-            "mean",
-            "math",
-            "java"
-          ]
+            "id": 178,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "java",
+            "code": "public static double mean(int[] numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.length;\n}",
+            "created": "2025-03-09T12:23:04.570Z",
+            "tags": [
+                "mean",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 179,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "c",
-          "code": "#include <stdio.h>\n\ndouble mean(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
-          "created": "2025-03-09T12:23:04.571Z",
-          "tags": [
-            "mean",
-            "math",
-            "c"
-          ]
+            "id": 179,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "c",
+            "code": "#include <stdio.h>\n\ndouble mean(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
+            "created": "2025-03-09T12:23:04.571Z",
+            "tags": [
+                "mean",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 180,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "cpp",
-          "code": "#include <vector>\n\ndouble mean(std::vector<int> numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.size();\n}",
-          "created": "2025-03-09T12:23:04.573Z",
-          "tags": [
-            "mean",
-            "math",
-            "cpp"
-          ]
+            "id": 180,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "cpp",
+            "code": "#include <vector>\n\ndouble mean(std::vector<int> numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.size();\n}",
+            "created": "2025-03-09T12:23:04.573Z",
+            "tags": [
+                "mean",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 181,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "csharp",
-          "code": "using System;\nusing System.Linq;\n\nstatic double Mean(int[] numbers) {\n    return numbers.Average();\n}",
-          "created": "2025-03-09T12:23:04.574Z",
-          "tags": [
-            "mean",
-            "math",
-            "csharp"
-          ]
+            "id": 181,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Linq;\n\nstatic double Mean(int[] numbers) {\n    return numbers.Average();\n}",
+            "created": "2025-03-09T12:23:04.574Z",
+            "tags": [
+                "mean",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 182,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "kotlin",
-          "code": "fun mean(numbers: List<Int>): Double {\n    return numbers.average()\n}",
-          "created": "2025-03-09T12:23:04.576Z",
-          "tags": [
-            "mean",
-            "math",
-            "kotlin"
-          ]
+            "id": 182,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "kotlin",
+            "code": "fun mean(numbers: List<Int>): Double {\n    return numbers.average()\n}",
+            "created": "2025-03-09T12:23:04.576Z",
+            "tags": [
+                "mean",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 183,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "javascript",
-          "code": "function mean(numbers) {\n    return numbers.reduce((sum, num) => sum + num, 0) / numbers.length;\n}",
-          "created": "2025-03-09T12:23:04.577Z",
-          "tags": [
-            "mean",
-            "math",
-            "javascript"
-          ]
+            "id": 183,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "javascript",
+            "code": "function mean(numbers) {\n    return numbers.reduce((sum, num) => sum + num, 0) / numbers.length;\n}",
+            "created": "2025-03-09T12:23:04.577Z",
+            "tags": [
+                "mean",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 184,
-          "title": "mean value",
-          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
-          "language": "go",
-          "code": "func mean(numbers []int) float64 {\n    sum := 0\n    for _, num := range numbers {\n        sum += num\n    }\n    return float64(sum) / float64(len(numbers))\n}",
-          "created": "2025-03-09T12:23:04.578Z",
-          "tags": [
-            "mean",
-            "math",
-            "go"
-          ]
+            "id": 184,
+            "title": "mean value",
+            "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+            "language": "go",
+            "code": "func mean(numbers []int) float64 {\n    sum := 0\n    for _, num := range numbers {\n        sum += num\n    }\n    return float64(sum) / float64(len(numbers))\n}",
+            "created": "2025-03-09T12:23:04.578Z",
+            "tags": [
+                "mean",
+                "math",
+                "go"
+            ]
         }
-      ],
-      [
+    ],
+    [
         {
-          "id": 185,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "python",
-          "code": "from funcbox import median_val\nprint(median_val([.........]))  #list\nprint(median_val([........])) #tuple",
-          "created": "2025-03-09T12:28:29.540Z",
-          "tags": [
-            "median",
-            "math",
-            "python"
-          ]
+            "id": 185,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "python",
+            "code": "from funcbox import median_val\nprint(median_val([.........]))  #list\nprint(median_val([........])) #tuple",
+            "created": "2025-03-09T12:28:29.540Z",
+            "tags": [
+                "median",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 186,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "java",
-          "code": "import java.util.Arrays;\n\npublic static double median(int[] numbers) {\n    Arrays.sort(numbers);\n    int n = numbers.length;\n    if (n % 2 == 0) {\n        return (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;\n    } else {\n        return numbers[n / 2];\n    }\n}",
-          "created": "2025-03-09T12:28:29.542Z",
-          "tags": [
-            "median",
-            "math",
-            "java"
-          ]
+            "id": 186,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "java",
+            "code": "import java.util.Arrays;\n\npublic static double median(int[] numbers) {\n    Arrays.sort(numbers);\n    int n = numbers.length;\n    if (n % 2 == 0) {\n        return (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;\n    } else {\n        return numbers[n / 2];\n    }\n}",
+            "created": "2025-03-09T12:28:29.542Z",
+            "tags": [
+                "median",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 187,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "c",
-          "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint compare(const void *a, const void *b) {\n    return (*(int*)a - *(int*)b);\n}\n\ndouble median(int numbers[], int size) {\n    qsort(numbers, size, sizeof(int), compare);\n    if (size % 2 == 0) {\n        return (numbers[size / 2 - 1] + numbers[size / 2]) / 2.0;\n    } else {\n        return numbers[size / 2];\n    }\n}",
-          "created": "2025-03-09T12:28:29.544Z",
-          "tags": [
-            "median",
-            "math",
-            "c"
-          ]
+            "id": 187,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint compare(const void *a, const void *b) {\n    return (*(int*)a - *(int*)b);\n}\n\ndouble median(int numbers[], int size) {\n    qsort(numbers, size, sizeof(int), compare);\n    if (size % 2 == 0) {\n        return (numbers[size / 2 - 1] + numbers[size / 2]) / 2.0;\n    } else {\n        return numbers[size / 2];\n    }\n}",
+            "created": "2025-03-09T12:28:29.544Z",
+            "tags": [
+                "median",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 188,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "cpp",
-          "code": "#include <vector>\n#include <algorithm>\n\ndouble median(std::vector<int>& numbers) {\n    std::sort(numbers.begin(), numbers.end());\n    int n = numbers.size();\n    if (n % 2 == 0) {\n        return (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;\n    } else {\n        return numbers[n / 2];\n    }\n}",
-          "created": "2025-03-09T12:28:29.545Z",
-          "tags": [
-            "median",
-            "math",
-            "cpp"
-          ]
+            "id": 188,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "cpp",
+            "code": "#include <vector>\n#include <algorithm>\n\ndouble median(std::vector<int>& numbers) {\n    std::sort(numbers.begin(), numbers.end());\n    int n = numbers.size();\n    if (n % 2 == 0) {\n        return (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;\n    } else {\n        return numbers[n / 2];\n    }\n}",
+            "created": "2025-03-09T12:28:29.545Z",
+            "tags": [
+                "median",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 189,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "csharp",
-          "code": "using System;\nusing System.Linq;\n\nstatic double Median(int[] numbers) {\n    Array.Sort(numbers);\n    int n = numbers.Length;\n    return n % 2 == 0 ? (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0 : numbers[n / 2];\n}",
-          "created": "2025-03-09T12:28:29.546Z",
-          "tags": [
-            "median",
-            "math",
-            "csharp"
-          ]
+            "id": 189,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Linq;\n\nstatic double Median(int[] numbers) {\n    Array.Sort(numbers);\n    int n = numbers.Length;\n    return n % 2 == 0 ? (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0 : numbers[n / 2];\n}",
+            "created": "2025-03-09T12:28:29.546Z",
+            "tags": [
+                "median",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 190,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "kotlin",
-          "code": "fun median(numbers: List<Int>): Double {\n    val sorted = numbers.sorted()\n    val n = sorted.size\n    return if (n % 2 == 0) (sorted[n / 2 - 1] + sorted[n / 2]) / 2.0 else sorted[n / 2].toDouble()\n}",
-          "created": "2025-03-09T12:28:29.547Z",
-          "tags": [
-            "median",
-            "math",
-            "kotlin"
-          ]
+            "id": 190,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "kotlin",
+            "code": "fun median(numbers: List<Int>): Double {\n    val sorted = numbers.sorted()\n    val n = sorted.size\n    return if (n % 2 == 0) (sorted[n / 2 - 1] + sorted[n / 2]) / 2.0 else sorted[n / 2].toDouble()\n}",
+            "created": "2025-03-09T12:28:29.547Z",
+            "tags": [
+                "median",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 191,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "javascript",
-          "code": "function median(numbers) {\n    numbers.sort((a, b) => a - b);\n    let n = numbers.length;\n    return n % 2 === 0 ? (numbers[n / 2 - 1] + numbers[n / 2]) / 2 : numbers[Math.floor(n / 2)];\n}",
-          "created": "2025-03-09T12:28:29.548Z",
-          "tags": [
-            "median",
-            "math",
-            "javascript"
-          ]
+            "id": 191,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "javascript",
+            "code": "function median(numbers) {\n    numbers.sort((a, b) => a - b);\n    let n = numbers.length;\n    return n % 2 === 0 ? (numbers[n / 2 - 1] + numbers[n / 2]) / 2 : numbers[Math.floor(n / 2)];\n}",
+            "created": "2025-03-09T12:28:29.548Z",
+            "tags": [
+                "median",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 192,
-          "title": "medium",
-          "description": "Calculates the median value of a list of numbers.",
-          "language": "go",
-          "code": "import (\n    \"sort\"\n)\n\nfunc median(numbers []int) float64 {\n    sort.Ints(numbers)\n    n := len(numbers)\n    if n%2 == 0 {\n        return float64(numbers[n/2-1]+numbers[n/2]) / 2.0\n    }\n    return float64(numbers[n/2])\n}",
-          "created": "2025-03-09T12:28:29.550Z",
-          "tags": [
-            "median",
-            "math",
-            "go"
-          ]
+            "id": 192,
+            "title": "medium",
+            "description": "Calculates the median value of a list of numbers.",
+            "language": "go",
+            "code": "import (\n    \"sort\"\n)\n\nfunc median(numbers []int) float64 {\n    sort.Ints(numbers)\n    n := len(numbers)\n    if n%2 == 0 {\n        return float64(numbers[n/2-1]+numbers[n/2]) / 2.0\n    }\n    return float64(numbers[n/2])\n}",
+            "created": "2025-03-09T12:28:29.550Z",
+            "tags": [
+                "median",
+                "math",
+                "go"
+            ]
         }
-      ],[
+    ], [
         {
-          "id": 193,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "python",
-          "code": "from funcbox import mode_val\nprint(mode_val([.........]))  # list\nprint(mode_val([..........]))",
-          "created": "2025-03-09T12:43:42.997Z",
-          "tags": [
-            "mode",
-            "math",
-            "python"
-          ]
+            "id": 193,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "python",
+            "code": "from funcbox import mode_val\nprint(mode_val([.........]))  # list\nprint(mode_val([..........]))",
+            "created": "2025-03-09T12:43:42.997Z",
+            "tags": [
+                "mode",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 194,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "java",
-          "code": "import java.util.HashMap;\nimport java.util.Map;\n\npublic static int mode(int[] numbers) {\n    Map<Integer, Integer> freqMap = new HashMap<>();\n    int maxCount = 0, mode = numbers[0];\n\n    for (int num : numbers) {\n        freqMap.put(",
-          "created": "2025-03-09T12:43:42.998Z",
-          "tags": [
-            "mode",
-            "math",
-            "java"
-          ]
+            "id": 194,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "java",
+            "code": "import java.util.HashMap;\nimport java.util.Map;\n\npublic static int mode(int[] numbers) {\n    Map<Integer, Integer> freqMap = new HashMap<>();\n    int maxCount = 0, mode = numbers[0];\n\n    for (int num : numbers) {\n        freqMap.put(",
+            "created": "2025-03-09T12:43:42.998Z",
+            "tags": [
+                "mode",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 195,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "c",
-          "code": "#include <stdio.h>\n\nint mode(int numbers[], int size) {\n    int maxCount = 0, mode = numbers[0];\n\n    for (int i = 0; i < size; i++) {\n        int count = 0;\n        for (int j = 0; j < size; j++) {\n            if (numbers[j] == numbers[i]) count++;\n        }\n        if (count > maxCount) {\n            maxCount = count;\n            mode = numbers[i];\n        }\n    }\n    return mode;\n}",
-          "created": "2025-03-09T12:43:42.999Z",
-          "tags": [
-            "mode",
-            "math",
-            "c"
-          ]
+            "id": 195,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "c",
+            "code": "#include <stdio.h>\n\nint mode(int numbers[], int size) {\n    int maxCount = 0, mode = numbers[0];\n\n    for (int i = 0; i < size; i++) {\n        int count = 0;\n        for (int j = 0; j < size; j++) {\n            if (numbers[j] == numbers[i]) count++;\n        }\n        if (count > maxCount) {\n            maxCount = count;\n            mode = numbers[i];\n        }\n    }\n    return mode;\n}",
+            "created": "2025-03-09T12:43:42.999Z",
+            "tags": [
+                "mode",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 196,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "cpp",
-          "code": "#include <vector>\n#include <unordered_map>\n\nint mode(std::vector<int>& numbers) {\n    std::unordered_map<int, int> freqMap;\n    int maxCount = 0, mode = numbers[0];\n\n    for (int num : numbers) {\n        freqMap[num]++;\n        if (freqMap[num] > maxCount) {\n            maxCount = freqMap[num];\n            mode = num;\n        }\n    }\n    return mode;\n}",
-          "created": "2025-03-09T12:43:43.001Z",
-          "tags": [
-            "mode",
-            "math",
-            "cpp"
-          ]
+            "id": 196,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "cpp",
+            "code": "#include <vector>\n#include <unordered_map>\n\nint mode(std::vector<int>& numbers) {\n    std::unordered_map<int, int> freqMap;\n    int maxCount = 0, mode = numbers[0];\n\n    for (int num : numbers) {\n        freqMap[num]++;\n        if (freqMap[num] > maxCount) {\n            maxCount = freqMap[num];\n            mode = num;\n        }\n    }\n    return mode;\n}",
+            "created": "2025-03-09T12:43:43.001Z",
+            "tags": [
+                "mode",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 197,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "csharp",
-          "code": "using System;\nusing System.Linq;\nusing System.Collections.Generic;\n\nstatic int Mode(int[] numbers) {\n    return numbers.GroupBy(n => n)\n                  .OrderByDescending(g => g.Count())\n                  .First()\n                  .Key;\n}",
-          "created": "2025-03-09T12:43:43.002Z",
-          "tags": [
-            "mode",
-            "math",
-            "csharp"
-          ]
+            "id": 197,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Linq;\nusing System.Collections.Generic;\n\nstatic int Mode(int[] numbers) {\n    return numbers.GroupBy(n => n)\n                  .OrderByDescending(g => g.Count())\n                  .First()\n                  .Key;\n}",
+            "created": "2025-03-09T12:43:43.002Z",
+            "tags": [
+                "mode",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 198,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "kotlin",
-          "code": "fun mode(numbers: List<Int>): Int {\n    return numbers.groupingBy { it }\n                  .eachCount()\n                  .maxByOrNull { it.value }!!\n                  .key\n}",
-          "created": "2025-03-09T12:43:43.003Z",
-          "tags": [
-            "mode",
-            "math",
-            "kotlin"
-          ]
+            "id": 198,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "kotlin",
+            "code": "fun mode(numbers: List<Int>): Int {\n    return numbers.groupingBy { it }\n                  .eachCount()\n                  .maxByOrNull { it.value }!!\n                  .key\n}",
+            "created": "2025-03-09T12:43:43.003Z",
+            "tags": [
+                "mode",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 199,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "javascript",
-          "code": "function mode(numbers) {\n    let freqMap = {};\n    let maxCount = 0, mode;\n\n    numbers.forEach(num => {\n        freqMap[num] = (freqMap[num] || 0) + 1;\n        if (freqMap[num] > maxCount) {\n            maxCount = freqMap[num];\n            mode = num;\n        }\n    });\n\n    return mode;\n}",
-          "created": "2025-03-09T12:43:43.004Z",
-          "tags": [
-            "mode",
-            "math",
-            "javascript"
-          ]
+            "id": 199,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "javascript",
+            "code": "function mode(numbers) {\n    let freqMap = {};\n    let maxCount = 0, mode;\n\n    numbers.forEach(num => {\n        freqMap[num] = (freqMap[num] || 0) + 1;\n        if (freqMap[num] > maxCount) {\n            maxCount = freqMap[num];\n            mode = num;\n        }\n    });\n\n    return mode;\n}",
+            "created": "2025-03-09T12:43:43.004Z",
+            "tags": [
+                "mode",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 200,
-          "title": "mode",
-          "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
-          "language": "go",
-          "code": "import \"sort\"\n\nfunc mode(numbers []int) int {\n    freqMap := make(map[int]int)\n    maxCount := 0\n    mode := numbers[0]\n\n    for _, num := range numbers {\n        freqMap[num]++\n        if freqMap[num] > maxCount {\n            maxCount = freqMap[num]\n            mode = num\n        }\n    }\n    return mode\n}",
-          "created": "2025-03-09T12:43:43.005Z",
-          "tags": [
-            "mode",
-            "math",
-            "go"
-          ]
+            "id": 200,
+            "title": "mode",
+            "description": "Calculates the mode(s) of a list of numbers. The mode is the value that appears most frequently.",
+            "language": "go",
+            "code": "import \"sort\"\n\nfunc mode(numbers []int) int {\n    freqMap := make(map[int]int)\n    maxCount := 0\n    mode := numbers[0]\n\n    for _, num := range numbers {\n        freqMap[num]++\n        if freqMap[num] > maxCount {\n            maxCount = freqMap[num]\n            mode = num\n        }\n    }\n    return mode\n}",
+            "created": "2025-03-09T12:43:43.005Z",
+            "tags": [
+                "mode",
+                "math",
+                "go"
+            ]
         }
-      ]
+    ]
 ];
 
 // DOM Elements
@@ -2869,5 +2869,5 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// Initialize on page load
+
 window.addEventListener('load', filterSnippets);
