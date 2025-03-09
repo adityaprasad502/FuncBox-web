@@ -1066,110 +1066,224 @@ const snippets = [
     ],
     [
         {
-          "id": 81,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "python",
-          "code": "from funcbox import average\nprint(average(......)) #tuple",
-          "created": "2025-03-09T09:16:35.945Z",
-          "tags": [
-            "avg",
-            "math",
-            "python"
-          ]
+            "id": 81,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "python",
+            "code": "from funcbox import average\nprint(average(......)) #tuple",
+            "created": "2025-03-09T09:16:35.945Z",
+            "tags": [
+                "avg",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 82,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "java",
-          "code": "public static double average(int[] numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.length;\n}",
-          "created": "2025-03-09T09:16:35.946Z",
-          "tags": [
-            "avg",
-            "math",
-            "java"
-          ]
+            "id": 82,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "java",
+            "code": "public static double average(int[] numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.length;\n}",
+            "created": "2025-03-09T09:16:35.946Z",
+            "tags": [
+                "avg",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 83,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "c",
-          "code": "#include <stdio.h>\n\ndouble average(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
-          "created": "2025-03-09T09:16:35.947Z",
-          "tags": [
-            "avg",
-            "math",
-            "c"
-          ]
+            "id": 83,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "c",
+            "code": "#include <stdio.h>\n\ndouble average(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
+            "created": "2025-03-09T09:16:35.947Z",
+            "tags": [
+                "avg",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 84,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "cpp",
-          "code": "double average(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
-          "created": "2025-03-09T09:16:35.948Z",
-          "tags": [
-            "avg",
-            "math",
-            "cpp"
-          ]
+            "id": 84,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "cpp",
+            "code": "double average(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
+            "created": "2025-03-09T09:16:35.948Z",
+            "tags": [
+                "avg",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 85,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "csharp",
-          "code": "static double Average(int[] numbers) {\n    int sum = 0;\n    foreach (int num in numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.Length;\n}",
-          "created": "2025-03-09T09:16:35.948Z",
-          "tags": [
-            "avg",
-            "math",
-            "csharp"
-          ]
+            "id": 85,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "csharp",
+            "code": "static double Average(int[] numbers) {\n    int sum = 0;\n    foreach (int num in numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.Length;\n}",
+            "created": "2025-03-09T09:16:35.948Z",
+            "tags": [
+                "avg",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 86,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "kotlin",
-          "code": "fun average(numbers: IntArray): Double {\n    return numbers.average()\n}",
-          "created": "2025-03-09T09:16:35.949Z",
-          "tags": [
-            "avg",
-            "math",
-            "kotlin"
-          ]
+            "id": 86,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "kotlin",
+            "code": "fun average(numbers: IntArray): Double {\n    return numbers.average()\n}",
+            "created": "2025-03-09T09:16:35.949Z",
+            "tags": [
+                "avg",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 87,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "javascript",
-          "code": "function average(numbers) {\n    let sum = numbers.reduce((acc, num) => acc + num, 0);\n    return sum / numbers.length;\n}",
-          "created": "2025-03-09T09:16:35.950Z",
-          "tags": [
-            "avg",
-            "math",
-            "javascript"
-          ]
+            "id": 87,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "javascript",
+            "code": "function average(numbers) {\n    let sum = numbers.reduce((acc, num) => acc + num, 0);\n    return sum / numbers.length;\n}",
+            "created": "2025-03-09T09:16:35.950Z",
+            "tags": [
+                "avg",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 88,
-          "title": "average",
-          "description": " Calculates the average of a list of numbers.",
-          "language": "go",
-          "code": "func average(numbers []int) float64 {\n    sum := 0\n    for _, num := range numbers {\n        sum += num\n    }\n    return float64(sum) / float64(len(numbers))\n}",
-          "created": "2025-03-09T09:16:35.950Z",
-          "tags": [
-            "avg",
-            "math",
-            "go"
-          ]
+            "id": 88,
+            "title": "average",
+            "description": " Calculates the average of a list of numbers.",
+            "language": "go",
+            "code": "func average(numbers []int) float64 {\n    sum := 0\n    for _, num := range numbers {\n        sum += num\n    }\n    return float64(sum) / float64(len(numbers))\n}",
+            "created": "2025-03-09T09:16:35.950Z",
+            "tags": [
+                "avg",
+                "math",
+                "go"
+            ]
         }
-      ]
+    ],
+    [
+        {
+            "id": 89,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "python",
+            "code": "from funcbox import percentage\n\nprint(percentage(.., ...))",
+            "created": "2025-03-09T09:18:24.878Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "python"
+            ]
+        },
+        {
+            "id": 90,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "java",
+            "code": "public static double percentage(double part, double whole) {\n    return (whole != 0) ? (part / whole) * 100 : 0;\n}",
+            "created": "2025-03-09T09:18:24.881Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "java"
+            ]
+        },
+        {
+            "id": 91,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "c",
+            "code": "#include <stdio.h>\n\ndouble percentage(double part, double whole) {\n    return (whole != 0) ? (part / whole) * 100 : 0;\n}",
+            "created": "2025-03-09T09:18:24.884Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "c"
+            ]
+        },
+        {
+            "id": 92,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "cpp",
+            "code": "#include <iostream>\n\ndouble percentage(double part, double whole) {\n    return (whole != 0) ? (part / whole) * 100 : 0;\n}",
+            "created": "2025-03-09T09:18:24.886Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "cpp"
+            ]
+        },
+        {
+            "id": 93,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "csharp",
+            "code": "public static double Percentage(double part, double whole) {\n    return (whole != 0) ? (part / whole) * 100 : 0;\n}",
+            "created": "2025-03-09T09:18:24.890Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "csharp"
+            ]
+        },
+        {
+            "id": 94,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "kotlin",
+            "code": "fun percentage(part: Double, whole: Double): Double {\n    return if (whole != 0.0) (part / whole) * 100 else 0.0\n}",
+            "created": "2025-03-09T09:18:24.903Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 95,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "javascript",
+            "code": "function percentage(part, whole) {\n    return whole !== 0 ? (part / whole) * 100 : 0;\n}",
+            "created": "2025-03-09T09:18:24.906Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "javascript"
+            ]
+        },
+        {
+            "id": 96,
+            "title": "percentage",
+            "description": "Calculates the percentage of a part in relation to a whole.",
+            "language": "go",
+            "code": "func Percentage(part, whole float64) float64 {\n    if whole != 0 {\n        return (part / whole) * 100\n    }\n    return 0\n}",
+            "created": "2025-03-09T09:18:24.909Z",
+            "tags": [
+                "percent",
+                "percentage",
+                "math",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
