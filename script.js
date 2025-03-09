@@ -432,108 +432,108 @@ const snippets = [
     ],
     [
         {
-          "id": 33,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "python",
-          "code": "from funcbox import fibonacci\nprint(is_prime(.....))  # single value\nprint(is_prime([.....]) #list",
-          "created": "2025-03-09T08:38:01.748Z",
-          "tags": [
-            "fibo",
-            "math",
-            "python"
-          ]
+            "id": 33,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "python",
+            "code": "from funcbox import fibonacci\nprint(is_prime(.....))  # single value\nprint(is_prime([.....]) #list",
+            "created": "2025-03-09T08:38:01.748Z",
+            "tags": [
+                "fibo",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 34,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "java",
-          "code": "public static int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
-          "created": "2025-03-09T08:38:01.760Z",
-          "tags": [
-            "fibo",
-            "math",
-            "java"
-          ]
+            "id": 34,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "java",
+            "code": "public static int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+            "created": "2025-03-09T08:38:01.760Z",
+            "tags": [
+                "fibo",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 35,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "c",
-          "code": "int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
-          "created": "2025-03-09T08:38:01.763Z",
-          "tags": [
-            "fibo",
-            "math",
-            "c"
-          ]
+            "id": 35,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "c",
+            "code": "int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+            "created": "2025-03-09T08:38:01.763Z",
+            "tags": [
+                "fibo",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 36,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "cpp",
-          "code": "int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
-          "created": "2025-03-09T08:38:01.765Z",
-          "tags": [
-            "fibo",
-            "math",
-            "cpp"
-          ]
+            "id": 36,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "cpp",
+            "code": "int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+            "created": "2025-03-09T08:38:01.765Z",
+            "tags": [
+                "fibo",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 37,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "csharp",
-          "code": "static int Fibonacci(int n) {\n    if (n <= 1) return n;\n    return Fibonacci(n - 1) + Fibonacci(n - 2);\n}",
-          "created": "2025-03-09T08:38:01.771Z",
-          "tags": [
-            "fibo",
-            "math",
-            "csharp"
-          ]
+            "id": 37,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "csharp",
+            "code": "static int Fibonacci(int n) {\n    if (n <= 1) return n;\n    return Fibonacci(n - 1) + Fibonacci(n - 2);\n}",
+            "created": "2025-03-09T08:38:01.771Z",
+            "tags": [
+                "fibo",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 38,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "kotlin",
-          "code": "fun fibonacci(n: Int): Int {\n    return if (n <= 1) n else fibonacci(n - 1) + fibonacci(n - 2)\n}",
-          "created": "2025-03-09T08:38:01.796Z",
-          "tags": [
-            "fibo",
-            "math",
-            "kotlin"
-          ]
+            "id": 38,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "kotlin",
+            "code": "fun fibonacci(n: Int): Int {\n    return if (n <= 1) n else fibonacci(n - 1) + fibonacci(n - 2)\n}",
+            "created": "2025-03-09T08:38:01.796Z",
+            "tags": [
+                "fibo",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 39,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "javascript",
-          "code": "function fibonacci(n) {\n    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);\n}",
-          "created": "2025-03-09T08:38:01.799Z",
-          "tags": [
-            "fibo",
-            "math",
-            "javascript"
-          ]
+            "id": 39,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "javascript",
+            "code": "function fibonacci(n) {\n    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);\n}",
+            "created": "2025-03-09T08:38:01.799Z",
+            "tags": [
+                "fibo",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 40,
-          "title": "fibonacci",
-          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
-          "language": "go",
-          "code": "func fibonacci(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return fibonacci(n-1) + fibonacci(n-2)\n}",
-          "created": "2025-03-09T08:38:01.801Z",
-          "tags": [
-            "fibo",
-            "math",
-            "go"
-          ]
+            "id": 40,
+            "title": "fibonacci",
+            "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+            "language": "go",
+            "code": "func fibonacci(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return fibonacci(n-1) + fibonacci(n-2)\n}",
+            "created": "2025-03-09T08:38:01.801Z",
+            "tags": [
+                "fibo",
+                "math",
+                "go"
+            ]
         }
     ],
     [
@@ -644,110 +644,215 @@ const snippets = [
     ],
     [
         {
-          "id": 49,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "python",
-          "code": "from funcbox import armstrong\nprint(is_armstrong(153))  # single\nprint(is_armstrong([370, 9474])) #list",
-          "created": "2025-03-09T08:46:09.033Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "python"
-          ]
+            "id": 49,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "python",
+            "code": "from funcbox import armstrong\nprint(is_armstrong(153))  # single\nprint(is_armstrong([370, 9474])) #list",
+            "created": "2025-03-09T08:46:09.033Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 50,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "java",
-          "code": "public static boolean isArmstrong(int n) {\n    int sum = 0, temp = n, digits = String.valueOf(n).length();\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
-          "created": "2025-03-09T08:46:09.034Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "java"
-          ]
+            "id": 50,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "java",
+            "code": "public static boolean isArmstrong(int n) {\n    int sum = 0, temp = n, digits = String.valueOf(n).length();\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+            "created": "2025-03-09T08:46:09.034Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 51,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "c",
-          "code": "#include <math.h>\n\nint isArmstrong(int n) {\n    int sum = 0, temp = n, digits = 0, rem;\n    while (temp > 0) {\n        temp /= 10;\n        digits++;\n    }\n    temp = n;\n    while (temp > 0) {\n        rem = temp % 10;\n        sum += pow(rem, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
-          "created": "2025-03-09T08:46:09.035Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "c"
-          ]
+            "id": 51,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "c",
+            "code": "#include <math.h>\n\nint isArmstrong(int n) {\n    int sum = 0, temp = n, digits = 0, rem;\n    while (temp > 0) {\n        temp /= 10;\n        digits++;\n    }\n    temp = n;\n    while (temp > 0) {\n        rem = temp % 10;\n        sum += pow(rem, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+            "created": "2025-03-09T08:46:09.035Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 52,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "cpp",
-          "code": "#include <cmath>\n\nbool isArmstrong(int n) {\n    int sum = 0, temp = n, digits = std::to_string(n).length();\n    while (temp > 0) {\n        sum += pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
-          "created": "2025-03-09T08:46:09.037Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "cpp"
-          ]
+            "id": 52,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "cpp",
+            "code": "#include <cmath>\n\nbool isArmstrong(int n) {\n    int sum = 0, temp = n, digits = std::to_string(n).length();\n    while (temp > 0) {\n        sum += pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+            "created": "2025-03-09T08:46:09.037Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 53,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "csharp",
-          "code": "using System;\n\nstatic bool IsArmstrong(int n) {\n    int sum = 0, temp = n, digits = n.ToString().Length;\n    while (temp > 0) {\n        sum += (int)Math.Pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
-          "created": "2025-03-09T08:46:09.038Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "csharp"
-          ]
+            "id": 53,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "csharp",
+            "code": "using System;\n\nstatic bool IsArmstrong(int n) {\n    int sum = 0, temp = n, digits = n.ToString().Length;\n    while (temp > 0) {\n        sum += (int)Math.Pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+            "created": "2025-03-09T08:46:09.038Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 54,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "kotlin",
-          "code": "fun isArmstrong(n: Int): Boolean {\n    val digits = n.toString().length\n    return n.toString().sumOf { Character.getNumericValue(it).toDouble().pow(digits).toInt() } == n\n}",
-          "created": "2025-03-09T08:46:09.045Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "kotlin"
-          ]
+            "id": 54,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "kotlin",
+            "code": "fun isArmstrong(n: Int): Boolean {\n    val digits = n.toString().length\n    return n.toString().sumOf { Character.getNumericValue(it).toDouble().pow(digits).toInt() } == n\n}",
+            "created": "2025-03-09T08:46:09.045Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 55,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "javascript",
-          "code": "function isArmstrong(n) {\n    let sum = 0, temp = n, digits = n.toString().length;\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, digits);\n        temp = Math.floor(temp / 10);\n    }\n    return sum === n;\n}",
-          "created": "2025-03-09T08:46:09.045Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "javascript"
-          ]
+            "id": 55,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "javascript",
+            "code": "function isArmstrong(n) {\n    let sum = 0, temp = n, digits = n.toString().length;\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, digits);\n        temp = Math.floor(temp / 10);\n    }\n    return sum === n;\n}",
+            "created": "2025-03-09T08:46:09.045Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 56,
-          "title": "Armstrong",
-          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
-          "language": "go",
-          "code": "import \"math\"\n\nfunc isArmstrong(n int) bool {\n    sum, temp, digits := 0, n, len(fmt.Sprint(n))\n    for temp > 0 {\n        digit := temp % 10\n        sum += int(math.Pow(float64(digit), float64(digits)))\n        temp /= 10\n    }\n    return sum == n\n}",
-          "created": "2025-03-09T08:46:09.046Z",
-          "tags": [
-            "armstrong",
-            "math",
-            "go"
-          ]
+            "id": 56,
+            "title": "Armstrong",
+            "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+            "language": "go",
+            "code": "import \"math\"\n\nfunc isArmstrong(n int) bool {\n    sum, temp, digits := 0, n, len(fmt.Sprint(n))\n    for temp > 0 {\n        digit := temp % 10\n        sum += int(math.Pow(float64(digit), float64(digits)))\n        temp /= 10\n    }\n    return sum == n\n}",
+            "created": "2025-03-09T08:46:09.046Z",
+            "tags": [
+                "armstrong",
+                "math",
+                "go"
+            ]
         }
-      ]
+    ], [
+        {
+            "id": 57,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "python",
+            "code": "from funcbox import is_perfect\n\nprint(is_perfect(..)) # single variable\nprint(is_perfect([....])) # multiple variable",
+            "created": "2025-03-09T08:53:50.710Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "python"
+            ]
+        },
+        {
+            "id": 58,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "java",
+            "code": "public static boolean isPerfect(int num) {\n    if (num < 2) return false;\n    int sum = 1;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) {\n            sum += i;\n            if (i != num / i) sum += num / i;\n        }\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T08:53:50.711Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "java"
+            ]
+        },
+        {
+            "id": 59,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "c",
+            "code": "#include <stdbool.h>\n\nbool is_perfect(int num) {\n    if (num < 2) return false;\n    int sum = 1;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) {\n            sum += i;\n            if (i != num / i) sum += num / i;\n        }\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T08:53:50.714Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "c"
+            ]
+        },
+        {
+            "id": 60,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "cpp",
+            "code": "#include <iostream>\n\nbool is_perfect(int num) {\n    if (num < 2) return false;\n    int sum = 1;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) {\n            sum += i;\n            if (i != num / i) sum += num / i;\n        }\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T08:53:50.715Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "cpp"
+            ]
+        },
+        {
+            "id": 61,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "csharp",
+            "code": "public static bool IsPerfect(int num) {\n    if (num < 2) return false;\n    int sum = 1;\n    for (int i = 2; i * i <= num; i++) {\n        if (num % i == 0) {\n            sum += i;\n            if (i != num / i) sum += num / i;\n        }\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T08:53:50.716Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "csharp"
+            ]
+        },
+        {
+            "id": 62,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "kotlin",
+            "code": "fun isPerfect(num: Int): Boolean {\n    if (num < 2) return false\n    var sum = 1\n    for (i in 2..Math.sqrt(num.toDouble()).toInt()) {\n        if (num % i == 0) {\n            sum += i\n            if (i != num / i) sum += num / i\n        }\n    }\n    return sum == num\n}",
+            "created": "2025-03-09T08:53:50.717Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 63,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "javascript",
+            "code": "function isPerfect(num) {\n    if (num < 2) return false;\n    let sum = 1;\n    for (let i = 2; i * i <= num; i++) {\n        if (num % i === 0) {\n            sum += i;\n            if (i !== num / i) sum += num / i;\n        }\n    }\n    return sum === num;\n}",
+            "created": "2025-03-09T08:53:50.718Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "javascript"
+            ]
+        },
+        {
+            "id": 64,
+            "title": "perfect number",
+            "description": "to check whether the given number is a perfect number or not.",
+            "language": "go",
+            "code": "func IsPerfect(num int) bool {\n    if num < 2 {\n        return false\n    }\n    sum := 1\n    for i := 2; i*i <= num; i++ {\n        if num%i == 0 {\n            sum += i\n            if i != num/i {\n                sum += num / i\n            }\n        }\n    }\n    return sum == num\n}",
+            "created": "2025-03-09T08:53:50.719Z",
+            "tags": [
+                "perfect number",
+                "perfect",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
