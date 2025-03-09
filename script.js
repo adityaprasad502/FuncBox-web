@@ -1493,7 +1493,113 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],
+    [
+        {
+          "id": 113,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "python",
+          "code": "from funcbox import lcm\nprint(lcm(..... , .....)) #two values",
+          "created": "2025-03-09T09:49:46.050Z",
+          "tags": [
+            "lcm",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 114,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "java",
+          "code": "public static int lcm(int a, int b) {\n    return Math.abs(a * b) / gcd(a, b);\n}",
+          "created": "2025-03-09T09:49:46.052Z",
+          "tags": [
+            "lcm",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 115,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "c",
+          "code": "int lcm(int a, int b) {\n    return (a * b) / gcd(a, b);\n}",
+          "created": "2025-03-09T09:49:46.052Z",
+          "tags": [
+            "lcm",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 116,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "cpp",
+          "code": "int lcm(int a, int b) {\n    return (a * b) / gcd(a, b);\n}",
+          "created": "2025-03-09T09:49:46.052Z",
+          "tags": [
+            "lcm",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 117,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "csharp",
+          "code": "static int LCM(int a, int b) {\n    return Math.Abs(a * b) / GCD(a, b);\n}",
+          "created": "2025-03-09T09:49:46.052Z",
+          "tags": [
+            "lcm",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 118,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "kotlin",
+          "code": "fun lcm(a: Int, b: Int): Int {\n    return (a * b) / gcd(a, b)\n}",
+          "created": "2025-03-09T09:49:46.053Z",
+          "tags": [
+            "lcm",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 119,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "javascript",
+          "code": "function lcm(a, b) {\n    return Math.abs(a * b) / gcd(a, b);\n}",
+          "created": "2025-03-09T09:49:46.053Z",
+          "tags": [
+            "lcm",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 120,
+          "title": "lcm ",
+          "description": "Calculates the least common multiple of two numbers",
+          "language": "go",
+          "code": "func lcm(a, b int) int {\n    return (a * b) / gcd(a, b)\n}",
+          "created": "2025-03-09T09:49:46.053Z",
+          "tags": [
+            "lcm",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
