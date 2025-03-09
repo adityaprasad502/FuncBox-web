@@ -429,7 +429,113 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],
+    [
+        {
+          "id": 33,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "python",
+          "code": "from funcbox import fibonacci\nprint(is_prime(.....))  # single value\nprint(is_prime([.....]) #list",
+          "created": "2025-03-09T08:38:01.748Z",
+          "tags": [
+            "fibo",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 34,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "java",
+          "code": "public static int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+          "created": "2025-03-09T08:38:01.760Z",
+          "tags": [
+            "fibo",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 35,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "c",
+          "code": "int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+          "created": "2025-03-09T08:38:01.763Z",
+          "tags": [
+            "fibo",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 36,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "cpp",
+          "code": "int fibonacci(int n) {\n    if (n <= 1) return n;\n    return fibonacci(n - 1) + fibonacci(n - 2);\n}",
+          "created": "2025-03-09T08:38:01.765Z",
+          "tags": [
+            "fibo",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 37,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "csharp",
+          "code": "static int Fibonacci(int n) {\n    if (n <= 1) return n;\n    return Fibonacci(n - 1) + Fibonacci(n - 2);\n}",
+          "created": "2025-03-09T08:38:01.771Z",
+          "tags": [
+            "fibo",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 38,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "kotlin",
+          "code": "fun fibonacci(n: Int): Int {\n    return if (n <= 1) n else fibonacci(n - 1) + fibonacci(n - 2)\n}",
+          "created": "2025-03-09T08:38:01.796Z",
+          "tags": [
+            "fibo",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 39,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "javascript",
+          "code": "function fibonacci(n) {\n    return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);\n}",
+          "created": "2025-03-09T08:38:01.799Z",
+          "tags": [
+            "fibo",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 40,
+          "title": "fibonacci",
+          "description": "Computes the Fibonacci number for a given non-negative integer or a list of non-negative integers.",
+          "language": "go",
+          "code": "func fibonacci(n int) int {\n    if n <= 1 {\n        return n\n    }\n    return fibonacci(n-1) + fibonacci(n-2)\n}",
+          "created": "2025-03-09T08:38:01.801Z",
+          "tags": [
+            "fibo",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
