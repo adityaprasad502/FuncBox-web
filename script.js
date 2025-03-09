@@ -535,7 +535,113 @@ const snippets = [
             "go"
           ]
         }
-      ]
+    ],
+    [
+        {
+            "id": 41,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "python",
+            "code": "from funcbox import is_palindrome\n\nprint(is_palindrome(\"madam\")) # single variable\nprint(is_palindrome([\"madam\", \"racecar\"])) # multiple variable",
+            "created": "2025-03-09T08:46:11.009Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "python"
+            ]
+        },
+        {
+            "id": 42,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "java",
+            "code": "public static boolean isPalindrome(int num) {\n    int original = num, reversed = 0;\n    while (num > 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    return original == reversed;\n}",
+            "created": "2025-03-09T08:46:11.013Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "java"
+            ]
+        },
+        {
+            "id": 43,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "c",
+            "code": "#include <stdbool.h>\n\nbool is_palindrome(int num) {\n    int original = num, reversed = 0;\n    while (num > 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    return original == reversed;\n}",
+            "created": "2025-03-09T08:46:11.015Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "c"
+            ]
+        },
+        {
+            "id": 44,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "cpp",
+            "code": "#include <iostream>\n\nbool is_palindrome(int num) {\n    int original = num, reversed = 0;\n    while (num > 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    return original == reversed;\n}",
+            "created": "2025-03-09T08:46:11.017Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "cpp"
+            ]
+        },
+        {
+            "id": 45,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "csharp",
+            "code": "public static bool IsPalindrome(int num) {\n    int original = num, reversed = 0;\n    while (num > 0) {\n        reversed = reversed * 10 + num % 10;\n        num /= 10;\n    }\n    return original == reversed;\n}",
+            "created": "2025-03-09T08:46:11.021Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "csharp"
+            ]
+        },
+        {
+            "id": 46,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "kotlin",
+            "code": "fun isPalindrome(num: Int): Boolean {\n    var original = num\n    var reversed = 0\n    var temp = num\n    while (temp > 0) {\n        reversed = reversed * 10 + temp % 10\n        temp /= 10\n    }\n    return original == reversed\n}",
+            "created": "2025-03-09T08:46:11.031Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 47,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "javascript",
+            "code": "function isPalindrome(num) {\n    return num.toString() === num.toString().split(\"\").reverse().join(\"\");\n}",
+            "created": "2025-03-09T08:46:11.033Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "javascript"
+            ]
+        },
+        {
+            "id": 48,
+            "title": "palindrome",
+            "description": "to check whether the given string is palindrome or not.",
+            "language": "go",
+            "code": "func IsPalindrome(num int) bool {\n    original, reversed := num, 0\n    for temp := num; temp > 0; temp /= 10 {\n        reversed = reversed*10 + temp%10\n    }\n    return original == reversed\n}",
+            "created": "2025-03-09T08:46:11.035Z",
+            "tags": [
+                "string",
+                "palindrome",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
