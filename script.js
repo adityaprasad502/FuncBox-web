@@ -641,7 +641,113 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],
+    [
+        {
+          "id": 49,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "python",
+          "code": "from funcbox import armstrong\nprint(is_armstrong(153))  # single\nprint(is_armstrong([370, 9474])) #list",
+          "created": "2025-03-09T08:46:09.033Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 50,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "java",
+          "code": "public static boolean isArmstrong(int n) {\n    int sum = 0, temp = n, digits = String.valueOf(n).length();\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+          "created": "2025-03-09T08:46:09.034Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 51,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "c",
+          "code": "#include <math.h>\n\nint isArmstrong(int n) {\n    int sum = 0, temp = n, digits = 0, rem;\n    while (temp > 0) {\n        temp /= 10;\n        digits++;\n    }\n    temp = n;\n    while (temp > 0) {\n        rem = temp % 10;\n        sum += pow(rem, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+          "created": "2025-03-09T08:46:09.035Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 52,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "cpp",
+          "code": "#include <cmath>\n\nbool isArmstrong(int n) {\n    int sum = 0, temp = n, digits = std::to_string(n).length();\n    while (temp > 0) {\n        sum += pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+          "created": "2025-03-09T08:46:09.037Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 53,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "csharp",
+          "code": "using System;\n\nstatic bool IsArmstrong(int n) {\n    int sum = 0, temp = n, digits = n.ToString().Length;\n    while (temp > 0) {\n        sum += (int)Math.Pow(temp % 10, digits);\n        temp /= 10;\n    }\n    return sum == n;\n}",
+          "created": "2025-03-09T08:46:09.038Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 54,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "kotlin",
+          "code": "fun isArmstrong(n: Int): Boolean {\n    val digits = n.toString().length\n    return n.toString().sumOf { Character.getNumericValue(it).toDouble().pow(digits).toInt() } == n\n}",
+          "created": "2025-03-09T08:46:09.045Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 55,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "javascript",
+          "code": "function isArmstrong(n) {\n    let sum = 0, temp = n, digits = n.toString().length;\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, digits);\n        temp = Math.floor(temp / 10);\n    }\n    return sum === n;\n}",
+          "created": "2025-03-09T08:46:09.045Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 56,
+          "title": "Armstrong",
+          "description": "Checks if a given number or a list of numbers is an Armstrong number.",
+          "language": "go",
+          "code": "import \"math\"\n\nfunc isArmstrong(n int) bool {\n    sum, temp, digits := 0, n, len(fmt.Sprint(n))\n    for temp > 0 {\n        digit := temp % 10\n        sum += int(math.Pow(float64(digit), float64(digits)))\n        temp /= 10\n    }\n    return sum == n\n}",
+          "created": "2025-03-09T08:46:09.046Z",
+          "tags": [
+            "armstrong",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
