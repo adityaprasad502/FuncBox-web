@@ -1283,7 +1283,112 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],[
+        {
+          "id": 97,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "python",
+          "code": "from funcbox import percentile\nprint(percentile([.....], ..)) #list, float",
+          "created": "2025-03-09T09:37:53.276Z",
+          "tags": [
+            "percentile",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 98,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "java",
+          "code": "import java.util.Arrays;\n\npublic static double percentile(double[] data, double p) {\n    Arrays.sort(data);\n    int index = (int) Math.ceil(p / 100.0 * data.length) - 1;\n    return data[Math.max(0, Math.min(index, data.length - 1))];\n}",
+          "created": "2025-03-09T09:37:53.277Z",
+          "tags": [
+            "percentile",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 99,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "c",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint compare(const void *a, const void *b) {\n    return (*(double*)a - *(double*)b);\n}\n\ndouble percentile(double data[], int size, double p) {\n    qsort(data, size, sizeof(double), compare);\n    int index = (int)(p / 100.0 * size);\n    return data[index];\n}",
+          "created": "2025-03-09T09:37:53.278Z",
+          "tags": [
+            "percentile",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 100,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "cpp",
+          "code": "#include <vector>\n#include <algorithm>\n\ndouble percentile(std::vector<double>& data, double p) {\n    std::sort(data.begin(), data.end());\n    int index = (int) std::ceil(p / 100.0 * data.size()) - 1;\n    return data[std::max(0, std::min(index, (int)data.size() - 1))];\n}",
+          "created": "2025-03-09T09:37:53.279Z",
+          "tags": [
+            "percentile",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 101,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "csharp",
+          "code": "using System;\nusing System.Linq;\n\nstatic double Percentile(double[] data, double p) {\n    Array.Sort(data);\n    int index = (int)Math.Ceiling(p / 100.0 * data.Length) - 1;\n    return data[Math.Max(0, Math.Min(index, data.Length - 1))];\n}",
+          "created": "2025-03-09T09:37:53.280Z",
+          "tags": [
+            "percentile",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 102,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "kotlin",
+          "code": "fun percentile(data: List<Double>, p: Double): Double {\n    val sortedData = data.sorted()\n    val index = (p / 100.0 * sortedData.size).toInt()\n    return sortedData.getOrElse(index) { sortedData.last() }\n}",
+          "created": "2025-03-09T09:37:53.281Z",
+          "tags": [
+            "percentile",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 103,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "javascript",
+          "code": "function percentile(data, p) {\n    data.sort((a, b) => a - b);\n    let index = Math.ceil((p / 100) * data.length) - 1;\n    return data[Math.max(0, Math.min(index, data.length - 1))];\n}",
+          "created": "2025-03-09T09:37:53.281Z",
+          "tags": [
+            "percentile",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 104,
+          "title": "percentile",
+          "description": "Calculates the nth percentile of a list of numbers.",
+          "language": "go",
+          "code": "import (\n    \"math\"\n    \"sort\"\n)\n\nfunc percentile(data []float64, p float64) float64 {\n    sort.Float64s(data)\n    index := int(math.Ceil((p / 100.0) * float64(len(data)))) - 1\n    if index < 0 {\n        return data[0]\n    } else if index >= len(data) {\n        return data[len(data)-1]\n    }\n    return data[index]\n}",
+          "created": "2025-03-09T09:37:53.282Z",
+          "tags": [
+            "percentile",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
