@@ -210,7 +210,121 @@ const snippets = [
                 "go"
             ]
         }
-    ]
+    ],
+    [
+        {
+          "id": 17,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "python",
+          "code": "from funcbox import factorial\nprint(factorial(....))  // single value\nprint(factorial([....])) // list",
+          "created": "2025-03-09T08:26:35.722Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 18,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "java",
+          "code": "public static long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
+          "created": "2025-03-09T08:26:35.736Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 19,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "c",
+          "code": "long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
+          "created": "2025-03-09T08:26:35.743Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 20,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "cpp",
+          "code": "long factorial(int n) {\n    if (n == 0) return 1;\n    return n * factorial(n - 1);\n}",
+          "created": "2025-03-09T08:26:35.746Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 21,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "csharp",
+          "code": "static long Factorial(int n) {\n    if (n == 0) return 1;\n    return n * Factorial(n - 1);\n}",
+          "created": "2025-03-09T08:26:35.753Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 22,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "kotlin",
+          "code": "fun factorial(n: Int): Long {\n    return if (n == 0) 1 else n * factorial(n - 1)\n}",
+          "created": "2025-03-09T08:26:35.779Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 23,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "javascript",
+          "code": "function factorial(n) {\n    return n === 0 ? 1 : n * factorial(n - 1);\n}",
+          "created": "2025-03-09T08:26:35.782Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 24,
+          "title": "factorial",
+          "description": "find the factorial of the given number\n",
+          "language": "go",
+          "code": "func factorial(n int) int {\n    if n == 0 {\n        return 1\n    }\n    return n * factorial(n-1)\n}",
+          "created": "2025-03-09T08:26:35.784Z",
+          "tags": [
+            "fact",
+            "factorial",
+            "math",
+            "go"
+          ]
+        }
+      ]
 ];
 
 // DOM Elements
