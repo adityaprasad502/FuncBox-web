@@ -1923,6 +1923,330 @@ const snippets = [
                 "go"
             ]
         }
+    ], [
+        {
+            "id": 145,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "python",
+            "code": "from funcbox import count_words\n\nprint(count_words(\"....\"))",
+            "created": "2025-03-09T10:09:42.551Z",
+            "tags": [
+                "count words",
+                "string",
+                "python"
+            ]
+        },
+        {
+            "id": 146,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "java",
+            "code": "public static int countWords(String text) {\n    return text.trim().isEmpty() ? 0 : text.trim().split(\"\\\\s+\").length;\n}",
+            "created": "2025-03-09T10:09:42.552Z",
+            "tags": [
+                "count words",
+                "string",
+                "java"
+            ]
+        },
+        {
+            "id": 147,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <ctype.h>\n\nint count_words(const char *text) {\n    int count = 0, in_word = 0;\n    while (*text) {\n        if (isspace(*text)) {\n            in_word = 0;\n        } else if (!in_word) {\n            in_word = 1;\n            count++;\n        }\n        text++;\n    }\n    return count;\n}",
+            "created": "2025-03-09T10:09:42.554Z",
+            "tags": [
+                "count words",
+                "string",
+                "c"
+            ]
+        },
+        {
+            "id": 148,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <sstream>\n\nint count_words(const std::string &text) {\n    std::istringstream stream(text);\n    std::string word;\n    int count = 0;\n    while (stream >> word) {\n        count++;\n    }\n    return count;\n}",
+            "created": "2025-03-09T10:09:42.555Z",
+            "tags": [
+                "count words",
+                "string",
+                "cpp"
+            ]
+        },
+        {
+            "id": 149,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Text.RegularExpressions;\n\npublic class Program {\n    public static int CountWords(string text) {\n        return string.IsNullOrWhiteSpace(text) ? 0 : Regex.Split(text.Trim(), @\"\\s+\").Length;\n    }\n}",
+            "created": "2025-03-09T10:09:42.557Z",
+            "tags": [
+                "count words",
+                "string",
+                "csharp"
+            ]
+        },
+        {
+            "id": 150,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "kotlin",
+            "code": "fun countWords(text: String): Int {\n    return text.trim().split(\"\\\\s+\".toRegex()).filter { it.isNotEmpty() }.size\n}",
+            "created": "2025-03-09T10:09:42.565Z",
+            "tags": [
+                "count words",
+                "string",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 151,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "javascript",
+            "code": "function countWords(text) {\n    return text.trim() ? text.trim().split(/\\s+/).length : 0;\n}",
+            "created": "2025-03-09T10:09:42.567Z",
+            "tags": [
+                "count words",
+                "string",
+                "javascript"
+            ]
+        },
+        {
+            "id": 152,
+            "title": "Count Words",
+            "description": "Counts the number of words in a given text.",
+            "language": "go",
+            "code": "import (\n    \"strings\"\n)\n\nfunc CountWords(text string) int {\n    words := strings.Fields(text)\n    return len(words)\n}",
+            "created": "2025-03-09T10:09:42.571Z",
+            "tags": [
+                "count words",
+                "string",
+                "go"
+            ]
+        }
+    ],
+    [
+        {
+            "id": 153,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "python",
+            "code": "from funcbox import get_word_count\n\nprint(get_word_count(\"...\"))",
+            "created": "2025-03-09T10:12:57.744Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "python"
+            ]
+        },
+        {
+            "id": 154,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "java",
+            "code": "import java.util.HashMap;\nimport java.util.Map;\nimport java.util.regex.*;\n\npublic static Map<String, Integer> getWordCount(String text) {\n    Map<String, Integer> wordCount = new HashMap<>();\n    Matcher matcher = Pattern.compile(\"\\\\b\\\\w+\\\\b\").matcher(text.toLowerCase());\n\n    while (matcher.find()) {\n        String word = matcher.group();\n        wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);\n    }\n    return wordCount;\n}",
+            "created": "2025-03-09T10:12:57.745Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "java"
+            ]
+        },
+        {
+            "id": 155,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <ctype.h>\n#include <string.h>\n\n#define MAX_WORDS 1000\n#define MAX_WORD_LEN 50\n\ntypedef struct {\n    char word[MAX_WORD_LEN];\n    int count;\n} WordEntry;\n\nvoid get_word_count(const char *text, WordEntry wordList[], int *wordCount) {\n    char word[MAX_WORD_LEN];\n    int i = 0, index = 0, found;\n    \n    while (*text) {\n        if (isalnum(*text)) {\n            word[i++] = tolower(*text);\n        } else if (i > 0) {\n            word[i] = '\\0';\n            found = 0;\n\n            for (int j = 0; j < *wordCount; j++) {\n                if (strcmp(wordList[j].word, word) == 0) {\n                    wordList[j].count++;\n                    found = 1;\n                    break;\n                }\n            }\n            if (!found && *wordCount < MAX_WORDS) {\n                strcpy(wordList[*wordCount].word, word);\n                wordList[*wordCount].count = 1;\n                (*wordCount)++;\n            }\n            i = 0;\n        }\n        text++;\n    }\n}",
+            "created": "2025-03-09T10:12:57.747Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "c"
+            ]
+        },
+        {
+            "id": 156,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <map>\n#include <sstream>\n#include <cctype>\n\nstd::map<std::string, int> get_word_count(const std::string &text) {\n    std::map<std::string, int> word_count;\n    std::stringstream ss(text);\n    std::string word;\n    \n    while (ss >> word) {\n        std::string cleaned_word;\n        for (char ch : word) {\n            if (isalnum(ch)) cleaned_word += tolower(ch);\n        }\n        if (!cleaned_word.empty()) word_count[cleaned_word]++;\n    }\n    return word_count;\n}",
+            "created": "2025-03-09T10:12:57.750Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "cpp"
+            ]
+        },
+        {
+            "id": 157,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Collections.Generic;\nusing System.Text.RegularExpressions;\n\npublic class Program {\n    public static Dictionary<string, int> GetWordCount(string text) {\n        Dictionary<string, int> wordCount = new Dictionary<string, int>();\n        foreach (Match match in Regex.Matches(text.ToLower(), @\"\\b\\w+\\b\")) {\n            string word = match.Value;\n            wordCount[word] = wordCount.ContainsKey(word) ? wordCount[word] + 1 : 1;\n        }\n        return wordCount;\n    }\n}",
+            "created": "2025-03-09T10:12:57.753Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "csharp"
+            ]
+        },
+        {
+            "id": 158,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "kotlin",
+            "code": "fun getWordCount(text: String): Map<String, Int> {\n    return text.lowercase()\n        .split(Regex(\"\\\\W+\"))\n        .filter { it.isNotEmpty() }\n        .groupingBy { it }\n        .eachCount()\n}",
+            "created": "2025-03-09T10:12:57.761Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 159,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "javascript",
+            "code": "function getWordCount(text) {\n    return text.toLowerCase()\n        .match(/\\b\\w+\\b/g)\n        ?.reduce((acc, word) => {\n            acc[word] = (acc[word] || 0) + 1;\n            return acc;\n        }, {}) || {};\n}",
+            "created": "2025-03-09T10:12:57.763Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "javascript"
+            ]
+        },
+        {
+            "id": 160,
+            "title": "Word Occurrence Counter",
+            "description": "Counts the occurrences of each word in a text and returns a dictionary.",
+            "language": "go",
+            "code": "import (\n    \"regexp\"\n    \"strings\"\n)\n\nfunc GetWordCount(text string) map[string]int {\n    wordCount := make(map[string]int)\n    re := regexp.MustCompile(`\\b\\w+\\b`)\n    words := re.FindAllString(strings.ToLower(text), -1)\n\n    for _, word := range words {\n        wordCount[word]++\n    }\n    return wordCount\n}",
+            "created": "2025-03-09T10:12:57.764Z",
+            "tags": [
+                "word occurrence counter",
+                "string",
+                "go"
+            ]
+        }
+    ], [
+        {
+            "id": 161,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "python",
+            "code": "from funcbox import get_char_count\n\nprint(get_char_count(\"...\"))",
+            "created": "2025-03-09T10:15:21.805Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "python"
+            ]
+        },
+        {
+            "id": 162,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "java",
+            "code": "import java.util.HashMap;\nimport java.util.Map;\n\npublic static Map<Character, Integer> getCharCount(String text) {\n    Map<Character, Integer> charCount = new HashMap<>();\n    for (char ch : text.toCharArray()) {\n        charCount.put(ch, charCount.getOrDefault(ch, 0) + 1);\n    }\n    return charCount;\n}",
+            "created": "2025-03-09T10:15:21.807Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "java"
+            ]
+        },
+        {
+            "id": 163,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <string.h>\n\nvoid get_char_count(const char *text, int charCount[256]) {\n    memset(charCount, 0, 256 * sizeof(int));\n    while (*text) {\n        charCount[(unsigned char)*text++]++;\n    }\n}",
+            "created": "2025-03-09T10:15:21.809Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "c"
+            ]
+        },
+        {
+            "id": 164,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <map>\n\nstd::map<char, int> get_char_count(const std::string &text) {\n    std::map<char, int> char_count;\n    for (char ch : text) {\n        char_count[ch]++;\n    }\n    return char_count;\n}",
+            "created": "2025-03-09T10:15:21.811Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "cpp"
+            ]
+        },
+        {
+            "id": 165,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "csharp",
+            "code": "using System;\nusing System.Collections.Generic;\n\npublic class Program {\n    public static Dictionary<char, int> GetCharCount(string text) {\n        Dictionary<char, int> charCount = new Dictionary<char, int>();\n        foreach (char ch in text) {\n            charCount[ch] = charCount.ContainsKey(ch) ? charCount[ch] + 1 : 1;\n        }\n        return charCount;\n    }\n}",
+            "created": "2025-03-09T10:15:21.814Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "csharp"
+            ]
+        },
+        {
+            "id": 166,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "kotlin",
+            "code": "fun getCharCount(text: String): Map<Char, Int> {\n    return text.groupingBy { it }.eachCount()\n}",
+            "created": "2025-03-09T10:15:21.821Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 167,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "javascript",
+            "code": "function getCharCount(text) {\n    return [...text].reduce((acc, char) => {\n        acc[char] = (acc[char] || 0) + 1;\n        return acc;\n    }, {});\n}",
+            "created": "2025-03-09T10:15:21.822Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "javascript"
+            ]
+        },
+        {
+            "id": 168,
+            "title": "Character Occurrence Counter",
+            "description": "Counts the occurrences of each character in a text and returns a dictionary.",
+            "language": "go",
+            "code": "func GetCharCount(text string) map[rune]int {\n    charCount := make(map[rune]int)\n    for _, ch := range text {\n        charCount[ch]++\n    }\n    return charCount\n}",
+            "created": "2025-03-09T10:15:21.824Z",
+            "tags": [
+                "algorithm",
+                "function",
+                "utility",
+                "go"
+            ]
+        }
     ]
 ];
 
