@@ -2352,6 +2352,112 @@ const snippets = [
             "go"
           ]
         }
+      ],
+      [
+        {
+          "id": 177,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "python",
+          "code": "from funcbox import mean_val\nprint(mean_val([........])) #list",
+          "created": "2025-03-09T12:23:04.568Z",
+          "tags": [
+            "mean",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 178,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "java",
+          "code": "public static double mean(int[] numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.length;\n}",
+          "created": "2025-03-09T12:23:04.570Z",
+          "tags": [
+            "mean",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 179,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "c",
+          "code": "#include <stdio.h>\n\ndouble mean(int numbers[], int size) {\n    int sum = 0;\n    for (int i = 0; i < size; i++) {\n        sum += numbers[i];\n    }\n    return (double) sum / size;\n}",
+          "created": "2025-03-09T12:23:04.571Z",
+          "tags": [
+            "mean",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 180,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "cpp",
+          "code": "#include <vector>\n\ndouble mean(std::vector<int> numbers) {\n    int sum = 0;\n    for (int num : numbers) {\n        sum += num;\n    }\n    return (double) sum / numbers.size();\n}",
+          "created": "2025-03-09T12:23:04.573Z",
+          "tags": [
+            "mean",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 181,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "csharp",
+          "code": "using System;\nusing System.Linq;\n\nstatic double Mean(int[] numbers) {\n    return numbers.Average();\n}",
+          "created": "2025-03-09T12:23:04.574Z",
+          "tags": [
+            "mean",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 182,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "kotlin",
+          "code": "fun mean(numbers: List<Int>): Double {\n    return numbers.average()\n}",
+          "created": "2025-03-09T12:23:04.576Z",
+          "tags": [
+            "mean",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 183,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "javascript",
+          "code": "function mean(numbers) {\n    return numbers.reduce((sum, num) => sum + num, 0) / numbers.length;\n}",
+          "created": "2025-03-09T12:23:04.577Z",
+          "tags": [
+            "mean",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 184,
+          "title": "mean value",
+          "description": "Calculates the arithmetic mean (average) of a list of numbers.",
+          "language": "go",
+          "code": "func mean(numbers []int) float64 {\n    sum := 0\n    for _, num := range numbers {\n        sum += num\n    }\n    return float64(sum) / float64(len(numbers))\n}",
+          "created": "2025-03-09T12:23:04.578Z",
+          "tags": [
+            "mean",
+            "math",
+            "go"
+          ]
+        }
       ]
 ];
 
