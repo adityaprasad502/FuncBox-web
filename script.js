@@ -855,110 +855,215 @@ const snippets = [
     ],
     [
         {
-          "id": 65,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "python",
-          "code": "from funcbox import harshad\nprint(is_harshad(....))  # single\nprint(is_harshad([.....])) #list",
-          "created": "2025-03-09T09:06:14.288Z",
-          "tags": [
-            "harshad",
-            "math",
-            "python"
-          ]
+            "id": 65,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "python",
+            "code": "from funcbox import harshad\nprint(is_harshad(....))  # single\nprint(is_harshad([.....])) #list",
+            "created": "2025-03-09T09:06:14.288Z",
+            "tags": [
+                "harshad",
+                "math",
+                "python"
+            ]
         },
         {
-          "id": 66,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "java",
-          "code": "public static boolean isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return n % sum == 0;\n}",
-          "created": "2025-03-09T09:06:14.289Z",
-          "tags": [
-            "harshad",
-            "math",
-            "java"
-          ]
+            "id": 66,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "java",
+            "code": "public static boolean isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return n % sum == 0;\n}",
+            "created": "2025-03-09T09:06:14.289Z",
+            "tags": [
+                "harshad",
+                "math",
+                "java"
+            ]
         },
         {
-          "id": 67,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "c",
-          "code": "#include <stdio.h>\n\nint isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return (n % sum == 0);\n}",
-          "created": "2025-03-09T09:06:14.290Z",
-          "tags": [
-            "harshad",
-            "math",
-            "c"
-          ]
+            "id": 67,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "c",
+            "code": "#include <stdio.h>\n\nint isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return (n % sum == 0);\n}",
+            "created": "2025-03-09T09:06:14.290Z",
+            "tags": [
+                "harshad",
+                "math",
+                "c"
+            ]
         },
         {
-          "id": 68,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "cpp",
-          "code": "bool isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return (n % sum == 0);\n}",
-          "created": "2025-03-09T09:06:14.290Z",
-          "tags": [
-            "harshad",
-            "math",
-            "cpp"
-          ]
+            "id": 68,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "cpp",
+            "code": "bool isHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return (n % sum == 0);\n}",
+            "created": "2025-03-09T09:06:14.290Z",
+            "tags": [
+                "harshad",
+                "math",
+                "cpp"
+            ]
         },
         {
-          "id": 69,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "csharp",
-          "code": "static bool IsHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return n % sum == 0;\n}",
-          "created": "2025-03-09T09:06:14.290Z",
-          "tags": [
-            "harshad",
-            "math",
-            "csharp"
-          ]
+            "id": 69,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "csharp",
+            "code": "static bool IsHarshad(int n) {\n    int sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp /= 10;\n    }\n    return n % sum == 0;\n}",
+            "created": "2025-03-09T09:06:14.290Z",
+            "tags": [
+                "harshad",
+                "math",
+                "csharp"
+            ]
         },
         {
-          "id": 70,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "kotlin",
-          "code": "fun isHarshad(n: Int): Boolean {\n    val sum = n.toString().sumOf { it.digitToInt() }\n    return n % sum == 0\n}",
-          "created": "2025-03-09T09:06:14.291Z",
-          "tags": [
-            "harshad",
-            "math",
-            "kotlin"
-          ]
+            "id": 70,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "kotlin",
+            "code": "fun isHarshad(n: Int): Boolean {\n    val sum = n.toString().sumOf { it.digitToInt() }\n    return n % sum == 0\n}",
+            "created": "2025-03-09T09:06:14.291Z",
+            "tags": [
+                "harshad",
+                "math",
+                "kotlin"
+            ]
         },
         {
-          "id": 71,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "javascript",
-          "code": "function isHarshad(n) {\n    let sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp = Math.floor(temp / 10);\n    }\n    return n % sum === 0;\n}",
-          "created": "2025-03-09T09:06:14.292Z",
-          "tags": [
-            "harshad",
-            "math",
-            "javascript"
-          ]
+            "id": 71,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "javascript",
+            "code": "function isHarshad(n) {\n    let sum = 0, temp = n;\n    while (temp > 0) {\n        sum += temp % 10;\n        temp = Math.floor(temp / 10);\n    }\n    return n % sum === 0;\n}",
+            "created": "2025-03-09T09:06:14.292Z",
+            "tags": [
+                "harshad",
+                "math",
+                "javascript"
+            ]
         },
         {
-          "id": 72,
-          "title": "harshad number",
-          "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
-          "language": "go",
-          "code": "func isHarshad(n int) bool {\n    sum, temp := 0, n\n    for temp > 0 {\n        sum += temp % 10\n        temp /= 10\n    }\n    return n%sum == 0\n}",
-          "created": "2025-03-09T09:06:14.292Z",
-          "tags": [
-            "harshad",
-            "math",
-            "go"
-          ]
+            "id": 72,
+            "title": "harshad number",
+            "description": "Checks if a given number or a list of numbers is a Harshad number (divisible by the sum of its digits).",
+            "language": "go",
+            "code": "func isHarshad(n int) bool {\n    sum, temp := 0, n\n    for temp > 0 {\n        sum += temp % 10\n        temp /= 10\n    }\n    return n%sum == 0\n}",
+            "created": "2025-03-09T09:06:14.292Z",
+            "tags": [
+                "harshad",
+                "math",
+                "go"
+            ]
         }
-      ]
+    ], [
+        {
+            "id": 73,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "python",
+            "code": "from funcbox import is_disarium\n\nprint(is_disarium(..)) # single variable\nprint(is_disarium([....])) # multiple variable",
+            "created": "2025-03-09T09:09:41.483Z",
+            "tags": [
+                "disarium",
+                "math",
+                "python"
+            ]
+        },
+        {
+            "id": 74,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "java",
+            "code": "public static boolean isDisarium(int num) {\n    int sum = 0, temp = num, length = String.valueOf(num).length();\n    while (temp > 0) {\n        sum += Math.pow(temp % 10, length--);\n        temp /= 10;\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T09:09:41.486Z",
+            "tags": [
+                "disarium",
+                "math",
+                "java"
+            ]
+        },
+        {
+            "id": 75,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "c",
+            "code": "#include <stdio.h>\n#include <math.h>\n#include <stdbool.h>\n\nbool is_disarium(int num) {\n    int sum = 0, temp = num, length = 0, n = num;\n    while (n > 0) { length++; n /= 10; }\n    while (temp > 0) {\n        sum += pow(temp % 10, length--);\n        temp /= 10;\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T09:09:41.489Z",
+            "tags": [
+                "disarium",
+                "math",
+                "c"
+            ]
+        },
+        {
+            "id": 76,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "cpp",
+            "code": "#include <iostream>\n#include <cmath>\n\nbool is_disarium(int num) {\n    int sum = 0, temp = num, length = std::to_string(num).length();\n    while (temp > 0) {\n        sum += pow(temp % 10, length--);\n        temp /= 10;\n    }\n    return sum == num;\n}",
+            "created": "2025-03-09T09:09:41.491Z",
+            "tags": [
+                "disarium",
+                "math",
+                "cpp"
+            ]
+        },
+        {
+            "id": 77,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "csharp",
+            "code": "using System;\n\npublic class Program {\n    public static bool IsDisarium(int num) {\n        int sum = 0, temp = num, length = num.ToString().Length;\n        while (temp > 0) {\n            sum += (int)Math.Pow(temp % 10, length--);\n            temp /= 10;\n        }\n        return sum == num;\n    }\n}",
+            "created": "2025-03-09T09:09:41.495Z",
+            "tags": [
+                "disarium",
+                "math",
+                "csharp"
+            ]
+        },
+        {
+            "id": 78,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "kotlin",
+            "code": "fun isDisarium(num: Int): Boolean {\n    var sum = 0\n    var temp = num\n    val length = num.toString().length\n    var position = length\n    while (temp > 0) {\n        sum += Math.pow((temp % 10).toDouble(), position--.toDouble()).toInt()\n        temp /= 10\n    }\n    return sum == num\n}",
+            "created": "2025-03-09T09:09:41.507Z",
+            "tags": [
+                "disarium",
+                "math",
+                "kotlin"
+            ]
+        },
+        {
+            "id": 79,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "javascript",
+            "code": "function isDisarium(num) {\n    let digits = num.toString().split(\"\").map(Number);\n    return digits.reduce((sum, digit, index) => sum + Math.pow(digit, index + 1), 0) === num;\n}",
+            "created": "2025-03-09T09:09:41.509Z",
+            "tags": [
+                "disarium",
+                "math",
+                "javascript"
+            ]
+        },
+        {
+            "id": 80,
+            "title": "disarium",
+            "description": "to check whether the given number is disarium or not.",
+            "language": "go",
+            "code": "import \"math\"\n\nfunc IsDisarium(num int) bool {\n    temp, sum, length := num, 0, len(fmt.Sprintf(\"%d\", num))\n    for temp > 0 {\n        sum += int(math.Pow(float64(temp%10), float64(length)))\n        length--\n        temp /= 10\n    }\n    return sum == num\n}",
+            "created": "2025-03-09T09:09:41.516Z",
+            "tags": [
+                "disarium",
+                "math",
+                "go"
+            ]
+        }
+    ]
 ];
 
 // DOM Elements
