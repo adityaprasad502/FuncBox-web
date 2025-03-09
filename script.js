@@ -2458,6 +2458,112 @@ const snippets = [
             "go"
           ]
         }
+      ],
+      [
+        {
+          "id": 185,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "python",
+          "code": "from funcbox import median_val\nprint(median_val([.........]))  #list\nprint(median_val([........])) #tuple",
+          "created": "2025-03-09T12:28:29.540Z",
+          "tags": [
+            "median",
+            "math",
+            "python"
+          ]
+        },
+        {
+          "id": 186,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "java",
+          "code": "import java.util.Arrays;\n\npublic static double median(int[] numbers) {\n    Arrays.sort(numbers);\n    int n = numbers.length;\n    if (n % 2 == 0) {\n        return (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;\n    } else {\n        return numbers[n / 2];\n    }\n}",
+          "created": "2025-03-09T12:28:29.542Z",
+          "tags": [
+            "median",
+            "math",
+            "java"
+          ]
+        },
+        {
+          "id": 187,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "c",
+          "code": "#include <stdio.h>\n#include <stdlib.h>\n\nint compare(const void *a, const void *b) {\n    return (*(int*)a - *(int*)b);\n}\n\ndouble median(int numbers[], int size) {\n    qsort(numbers, size, sizeof(int), compare);\n    if (size % 2 == 0) {\n        return (numbers[size / 2 - 1] + numbers[size / 2]) / 2.0;\n    } else {\n        return numbers[size / 2];\n    }\n}",
+          "created": "2025-03-09T12:28:29.544Z",
+          "tags": [
+            "median",
+            "math",
+            "c"
+          ]
+        },
+        {
+          "id": 188,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "cpp",
+          "code": "#include <vector>\n#include <algorithm>\n\ndouble median(std::vector<int>& numbers) {\n    std::sort(numbers.begin(), numbers.end());\n    int n = numbers.size();\n    if (n % 2 == 0) {\n        return (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0;\n    } else {\n        return numbers[n / 2];\n    }\n}",
+          "created": "2025-03-09T12:28:29.545Z",
+          "tags": [
+            "median",
+            "math",
+            "cpp"
+          ]
+        },
+        {
+          "id": 189,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "csharp",
+          "code": "using System;\nusing System.Linq;\n\nstatic double Median(int[] numbers) {\n    Array.Sort(numbers);\n    int n = numbers.Length;\n    return n % 2 == 0 ? (numbers[n / 2 - 1] + numbers[n / 2]) / 2.0 : numbers[n / 2];\n}",
+          "created": "2025-03-09T12:28:29.546Z",
+          "tags": [
+            "median",
+            "math",
+            "csharp"
+          ]
+        },
+        {
+          "id": 190,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "kotlin",
+          "code": "fun median(numbers: List<Int>): Double {\n    val sorted = numbers.sorted()\n    val n = sorted.size\n    return if (n % 2 == 0) (sorted[n / 2 - 1] + sorted[n / 2]) / 2.0 else sorted[n / 2].toDouble()\n}",
+          "created": "2025-03-09T12:28:29.547Z",
+          "tags": [
+            "median",
+            "math",
+            "kotlin"
+          ]
+        },
+        {
+          "id": 191,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "javascript",
+          "code": "function median(numbers) {\n    numbers.sort((a, b) => a - b);\n    let n = numbers.length;\n    return n % 2 === 0 ? (numbers[n / 2 - 1] + numbers[n / 2]) / 2 : numbers[Math.floor(n / 2)];\n}",
+          "created": "2025-03-09T12:28:29.548Z",
+          "tags": [
+            "median",
+            "math",
+            "javascript"
+          ]
+        },
+        {
+          "id": 192,
+          "title": "medium",
+          "description": "Calculates the median value of a list of numbers.",
+          "language": "go",
+          "code": "import (\n    \"sort\"\n)\n\nfunc median(numbers []int) float64 {\n    sort.Ints(numbers)\n    n := len(numbers)\n    if n%2 == 0 {\n        return float64(numbers[n/2-1]+numbers[n/2]) / 2.0\n    }\n    return float64(numbers[n/2])\n}",
+          "created": "2025-03-09T12:28:29.550Z",
+          "tags": [
+            "median",
+            "math",
+            "go"
+          ]
+        }
       ]
 ];
 
